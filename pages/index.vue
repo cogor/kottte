@@ -59,13 +59,24 @@
     </section>
     <section class="second-block">
       <img
-        src="/second-back.png"
+        src="/second-back@2x.png"
         class="second-block__back"
         alt="second block back image"
       />
       <div class="second-block_middle">
         <img src="/second-circle.png" alt="Second circle" />
+        <div class="time">
+          0.4<br />
+          секунды
+        </div>
+        <div class="wzuh">вжух вжух вжух</div>
+        <div class="go">Поехали!</div>
+        <div class="annotation">
+          Скорость загрузки наших<br />
+          самых быстрых сайтов
+        </div>
       </div>
+      <img class="second-block__front" src="/second-front.png" alt="" />
     </section>
   </div>
 </template>
@@ -91,6 +102,7 @@ export default {}
     justify-content: center;
     flex-direction: column;
     min-height: calc(100vh - 40px);
+    position: relative;
     .circle-one {
       pointer-events: none;
       user-select: none;
@@ -133,6 +145,90 @@ export default {}
       text-transform: uppercase;
       color: #8f74fb;
       transform: rotate(90deg);
+    }
+  }
+  .second-block {
+    position: relative;
+    .second-block__back {
+      max-width: 80vw;
+      left: 10%;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+    }
+    .second-block__front {
+      position: absolute;
+      top: -50px;
+      z-index: 20;
+      height: auto;
+      object-fit: contain;
+      left: 0;
+      max-width: 80vw;
+    }
+    .second-block_middle {
+      position: absolute;
+      right: 24px;
+      top: -50px;
+      z-index: 10;
+      width: 100%;
+      img {
+        z-index: 10;
+        width: 816px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .time {
+        font-style: italic;
+        font-weight: 900;
+        font-size: 85px;
+        line-height: 100%;
+        color: #ebe9f3;
+        transform: rotate(-13.99deg);
+        position: absolute;
+        right: 15%;
+        top: 278px;
+        z-index: 11;
+        text-align: center;
+      }
+      .wzuh {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        color: #ffffff;
+        transform: rotate(-13.99deg);
+        position: absolute;
+        right: 35%;
+        top: 244px;
+        z-index: 11;
+      }
+      .go {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        color: #ffffff;
+        transform: rotate(-13.99deg);
+        position: absolute;
+        right: 55%;
+        top: 490px;
+        z-index: 11;
+      }
+      .annotation {
+        font-style: italic;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        color: #ffffff;
+        transform: rotate(-13.99deg);
+        position: absolute;
+        right: 30%;
+        top: 541px;
+        z-index: 11;
+      }
     }
   }
 }
