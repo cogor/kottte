@@ -57,6 +57,16 @@
         скрооооооолль
       </div>
     </section>
+    <section class="second-block">
+      <img
+        src="/second-back.png"
+        class="second-block__back"
+        alt="second block back image"
+      />
+      <div class="second-block_middle">
+        <img src="/second-circle.png" alt="Second circle" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -80,49 +90,50 @@ export default {}
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 40px);
     .circle-one {
       pointer-events: none;
       user-select: none;
+      margin-top: -150px;
     }
-  }
-  .glass-panel {
-    padding: 16px 24px;
-    background: rgba(18, 18, 18, 0.87);
-    opacity: 0.8;
-    border: 0.5px solid #2f2f2f;
-    box-sizing: border-box;
-    box-shadow: 0 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    max-width: 880px;
-    .text {
+    .glass-panel {
+      padding: 16px 24px;
+      background: rgba(18, 18, 18, 0.87);
+      opacity: 0.8;
+      border: 0.5px solid #2f2f2f;
+      box-sizing: border-box;
+      box-shadow: 0 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      max-width: 880px;
+      .text {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #ebe9f3;
+      }
+      .cta {
+        width: 84px;
+        cursor: pointer;
+      }
+    }
+    .scroll-trigger {
       font-family: 'IBM Plex Mono', monospace;
-      font-weight: 300;
-      font-size: 48px;
-      line-height: 120%;
+      font-size: 16px;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.185em;
       text-transform: uppercase;
-      color: #ebe9f3;
+      color: #8f74fb;
+      transform: rotate(90deg);
     }
-    .cta {
-      width: 84px;
-      cursor: pointer;
-    }
-  }
-  .scroll-trigger {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 16px;
-    line-height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.185em;
-    text-transform: uppercase;
-    color: #8f74fb;
-    transform: rotate(90deg);
   }
 }
 </style>
