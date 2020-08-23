@@ -22,6 +22,9 @@ html {
   background: #0c0c0c;
 }
 
+body {
+  overflow-x: hidden;
+}
 *,
 *::before,
 *::after {

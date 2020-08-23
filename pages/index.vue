@@ -64,16 +64,18 @@
         alt="second block back image"
       />
       <div class="second-block_middle">
-        <img src="/second-circle.png" alt="Second circle" />
-        <div class="time">
-          0.4<br />
-          секунды
-        </div>
-        <div class="wzuh">вжух вжух вжух</div>
-        <div class="go">Поехали!</div>
-        <div class="annotation">
-          Скорость загрузки наших<br />
-          самых быстрых сайтов
+        <div class="second-block__circle">
+          <img src="/second-circle.png" alt="Second circle" />
+          <div class="time">
+            0.4<br />
+            секунды
+          </div>
+          <div class="wzuh">вжух вжух вжух</div>
+          <div class="go">Поехали!</div>
+          <div class="annotation">
+            Скорость загрузки наших<br />
+            самых быстрых сайтов
+          </div>
         </div>
       </div>
       <img class="second-block__front" src="/second-front.png" alt="" />
@@ -99,20 +101,20 @@ export default {}
   .first-block {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    min-height: calc(100vh - 40px);
+    min-height: 90vh;
     position: relative;
     .circle-one {
       pointer-events: none;
       user-select: none;
-      margin-top: -150px;
+      margin-top: -50px;
     }
     .glass-panel {
       padding: 16px 24px;
       background: rgba(18, 18, 18, 0.87);
       opacity: 0.8;
-      border: 0.5px solid #2f2f2f;
+      border: 1px solid #2f2f2f;
       box-sizing: border-box;
       box-shadow: 0 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(12px);
@@ -121,6 +123,7 @@ export default {}
       align-items: center;
       position: absolute;
       max-width: 880px;
+      top: 30%;
       .text {
         font-family: 'IBM Plex Mono', monospace;
         font-weight: 300;
@@ -145,89 +148,96 @@ export default {}
       text-transform: uppercase;
       color: #8f74fb;
       transform: rotate(90deg);
+      margin-bottom: 120px;
     }
   }
   .second-block {
     position: relative;
     .second-block__back {
-      max-width: 80vw;
-      left: 10%;
+      max-width: 1200px;
       height: auto;
       position: absolute;
       z-index: 1;
       object-fit: contain;
+      left: calc(50% - 600px);
     }
     .second-block__front {
       position: absolute;
-      top: -50px;
       z-index: 20;
       height: auto;
       object-fit: contain;
-      left: 0;
-      max-width: 80vw;
+      max-width: 1070px;
+      left: calc(50% - 610px);
     }
     .second-block_middle {
       position: absolute;
       right: 24px;
-      top: -50px;
       z-index: 10;
       width: 100%;
-      img {
-        z-index: 10;
-        width: 816px;
-        height: auto;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-      .time {
-        font-style: italic;
-        font-weight: 900;
-        font-size: 85px;
-        line-height: 100%;
-        color: #ebe9f3;
-        transform: rotate(-13.99deg);
-        position: absolute;
-        right: 15%;
-        top: 278px;
-        z-index: 11;
-        text-align: center;
-      }
-      .wzuh {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 120%;
-        color: #ffffff;
-        transform: rotate(-13.99deg);
-        position: absolute;
-        right: 35%;
-        top: 244px;
-        z-index: 11;
-      }
-      .go {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 120%;
-        color: #ffffff;
-        transform: rotate(-13.99deg);
-        position: absolute;
-        right: 55%;
-        top: 490px;
-        z-index: 11;
-      }
-      .annotation {
-        font-style: italic;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 120%;
-        color: #ffffff;
-        transform: rotate(-13.99deg);
-        position: absolute;
-        right: 30%;
-        top: 541px;
-        z-index: 11;
+      display: flex;
+      justify-content: flex-end;
+      .second-block__circle {
+        max-width: 816px;
+        width: 100%;
+        position: relative;
+        margin-right: 13%;
+        img {
+          z-index: 10;
+          width: 100%;
+          max-width: 816px;
+          height: auto;
+          top: 45px;
+        }
+        .time {
+          font-style: italic;
+          font-weight: 900;
+          font-size: 85px;
+          line-height: 100%;
+          color: #ebe9f3;
+          transform: rotate(-13.99deg);
+          position: absolute;
+          left: 195px;
+          top: 330px;
+          z-index: 11;
+          text-align: center;
+        }
+        .wzuh {
+          font-style: italic;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 120%;
+          color: #ffffff;
+          transform: rotate(-13.99deg);
+          position: absolute;
+          right: 510px;
+          top: 274px;
+          z-index: 11;
+        }
+        .go {
+          font-style: italic;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 120%;
+          color: #ffffff;
+          transform: rotate(-13.99deg);
+          position: absolute;
+          right: 840px;
+          top: 520px;
+          z-index: 11;
+        }
+        .annotation {
+          font-style: italic;
+          font-weight: 500;
+          font-size: 32px;
+          line-height: 120%;
+          color: #ffffff;
+          transform: rotate(-13.99deg);
+          position: absolute;
+          right: 370px;
+          top: 581px;
+          z-index: 11;
+          width: 490px;
+        }
       }
     }
   }
