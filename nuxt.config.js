@@ -21,7 +21,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: process.env.npm_package_description || 'Kottte',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -55,6 +55,7 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    'nuxt-webfontloader',
   ],
   /*
    ** Axios module configuration
@@ -70,5 +71,26 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    postcss: {
+      // Add plugin names as key and arguments as value
+      // Install them before as dependencies with npm or yarn
+      plugins: {
+        // Disable a plugin by passing false as value
+        'postcss-import': {},
+        'postcss-cssnext': {},
+        'postcss-sorting': {},
+        'postcss-nested': {},
+        cssnano: {},
+      },
+      preset: {
+        // Change the postcss-preset-env settings
+      },
+    },
+  },
+  webfontloader: {
+    google: {
+      families: ['IBM+Plex+Mono:300,400', 'Inter:400,500,600,900&display=swap'],
+    },
+  },
 }

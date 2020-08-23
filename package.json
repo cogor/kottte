@@ -1,5 +1,5 @@
 {
-  "name": "Kotte",
+  "name": "Kottte",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -14,8 +14,14 @@
     "@nuxt/content": "^1.5.0",
     "@nuxtjs/axios": "^5.12.0",
     "nuxt": "^2.14.0",
+    "nuxt-webfontloader": "^1.1.0",
     "postcss": "^7.0.32",
-    "postcss-loader": "^3.0.0"
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.3",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-sorting": "^5.0.1",
+    "cssnano": "^4.1.10"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
