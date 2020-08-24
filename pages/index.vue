@@ -57,15 +57,19 @@
         скрооооооолль
       </div>
     </section>
-    <section class="second-block">
+    <section v-lazy-container="{ selector: 'img' }" class="second-block">
       <img
-        src="/second-back@2x.png"
+        data-src="/second-back@2x.png"
         class="second-block__back"
         alt="second block back image"
       />
       <div class="second-block_middle">
         <div class="second-block__circle">
-          <img src="/second-circle.png" alt="Second circle" />
+          <img
+            data-src="/second-circle.png"
+            src="/second-circle.png"
+            alt="Second circle"
+          />
           <div class="time">
             0.4<br />
             секунды
@@ -78,7 +82,7 @@
           </div>
         </div>
       </div>
-      <img class="second-block__front" src="/second-front.png" alt="" />
+      <img class="second-block__front" data-src="/second-front.png" alt="" />
     </section>
   </div>
 </template>
