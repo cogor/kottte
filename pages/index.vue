@@ -53,9 +53,7 @@
           <img src="/cta.png" alt="cta-btn" />
         </div>
       </div>
-      <div class="scroll-trigger">
-        скрооооооолль
-      </div>
+      <div class="scroll-trigger">скрооооооолль</div>
     </section>
     <section v-lazy-container="{ selector: 'img' }" class="second-block">
       <img
@@ -83,6 +81,37 @@
         </div>
       </div>
       <img class="second-block__front" data-src="/second-front.png" alt="" />
+    </section>
+    <section v-lazy-container="{ selector: 'img' }" class="third-block">
+      <img class="third-block__back" data-src="/third-back.png" alt="" />
+      <img class="third-block__front" data-src="/third-front.png" alt="" />
+      <h2>Но почему это важно?</h2>
+      <div class="list">
+        <div class="item first-cause">
+          Посетители любят когда сайт<br />
+          загружается мгновенно
+        </div>
+        <div class="item second-cause">
+          Поисковые алгоритмы тоже<br />
+          любят быстрые сайты
+        </div>
+        <div class="item third-cause">
+          Поэтому быстрому сайту проще<br />
+          попасть в топ поисковых запросов
+        </div>
+        <div class="item fourth-cause">
+          а значит — вы сможете<br />
+          меньше тратить на рекламу
+        </div>
+      </div>
+    </section>
+    <section v-lazy-container="{ selector: 'img' }" class="fourth-block">
+      <img class="fourth-circle" data-src="/fourth-circle.png" alt="" />
+      <img class="fourth-block__back" data-src="/fourth-back.png" alt="" />
+      <img class="fourth-block__front" data-src="/fourth-front.png" alt="" />
+      <div class="text">
+        Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
+      </div>
     </section>
   </div>
 </template>
@@ -157,6 +186,7 @@ export default {}
   }
   .second-block {
     position: relative;
+    min-height: 940px;
     .second-block__back {
       max-width: 1200px;
       height: auto;
@@ -243,6 +273,107 @@ export default {}
           width: 490px;
         }
       }
+    }
+  }
+  .third-block {
+    padding-top: 172px;
+    position: relative;
+    min-height: 1560px;
+    .list {
+      padding-left: calc(50% - 500px);
+      padding-right: calc(50% - 500px);
+      .first-cause {
+        margin-top: 122px;
+      }
+      .second-cause {
+        margin-top: 46px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .third-cause {
+        margin-top: 190px;
+      }
+      .fourth-cause {
+        margin-top: 46px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    h2 {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 85px;
+      line-height: 100%;
+      text-align: center;
+      color: #ebe9f3;
+    }
+    .third-block__back {
+      max-width: 1136px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+      left: calc(50% - 550px);
+      top: 0;
+    }
+    .third-block__front {
+      position: absolute;
+      z-index: 20;
+      height: auto;
+      object-fit: contain;
+      max-width: 1146px;
+      left: calc(50% - 570px);
+      top: 0;
+    }
+    .item {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 150%;
+      color: #ebe9f3;
+    }
+  }
+  .fourth-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .fourth-block__back {
+      max-width: 1159px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+      left: calc(50% - 580px);
+      top: 0;
+    }
+    .fourth-block__front {
+      position: absolute;
+      z-index: 20;
+      height: auto;
+      object-fit: contain;
+      max-width: 1196px;
+      left: calc(50% - 640px);
+      top: -130px;
+    }
+    .fourth-circle {
+      z-index: 30;
+      position: relative;
+      width: 772px;
+      height: auto;
+    }
+    .text {
+      max-width: 612px;
+      font-style: italic;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+      text-align: center;
+      color: #edecf0;
+      text-shadow: -10px 12px 12px rgba(97, 97, 97, 0.15),
+        -6px 4px 8px rgba(99, 99, 99, 0.25);
+      z-index: 30;
+      margin-top: -190px;
     }
   }
 }
