@@ -276,7 +276,6 @@ export default {}
     }
     @media (max-width: 1440px) {
       max-width: 100vw;
-      overflow: hidden;
     }
   }
   .third-block {
@@ -285,7 +284,6 @@ export default {}
     min-height: 1560px;
     @media (max-width: 1440px) {
       max-width: 100%;
-      overflow: hidden;
     }
     .list {
       padding-left: calc(50% - 500px);
@@ -348,7 +346,6 @@ export default {}
     flex-direction: column;
     @media (max-width: 1440px) {
       max-width: 100%;
-      overflow: hidden;
     }
     .fourth-block__back {
       max-width: 1159px;
