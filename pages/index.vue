@@ -117,7 +117,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Kottte',
+    }
+  },
+}
 </script>
 
 <style lang="postcss">
@@ -381,7 +387,7 @@ export default {}
       color: #edecf0;
       text-shadow: -10px 12px 12px rgba(97, 97, 97, 0.15),
         -6px 4px 8px rgba(99, 99, 99, 0.25);
-      z-index: 30;
+      z-index: 29;
       margin-top: -190px;
     }
   }
