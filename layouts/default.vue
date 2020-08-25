@@ -24,11 +24,21 @@ html {
 
 body {
   overflow-x: hidden;
+  @media (max-width: 1440px) {
+    max-width: 100vw;
+    overflow: hidden;
+  }
 }
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+div {
+  .disabled {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
 }
 </style>

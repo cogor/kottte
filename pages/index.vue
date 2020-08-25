@@ -1,6 +1,6 @@
 <template>
   <div class="homepage">
-    <header>
+    <header class="">
       <div class="logo">
         <svg
           width="92"
@@ -274,11 +274,19 @@ export default {}
         }
       }
     }
+    @media (max-width: 1440px) {
+      max-width: 100vw;
+      overflow: hidden;
+    }
   }
   .third-block {
     padding-top: 172px;
     position: relative;
     min-height: 1560px;
+    @media (max-width: 1440px) {
+      max-width: 100%;
+      overflow: hidden;
+    }
     .list {
       padding-left: calc(50% - 500px);
       padding-right: calc(50% - 500px);
@@ -338,6 +346,10 @@ export default {}
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media (max-width: 1440px) {
+      max-width: 100%;
+      overflow: hidden;
+    }
     .fourth-block__back {
       max-width: 1159px;
       height: auto;
