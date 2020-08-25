@@ -24,10 +24,6 @@ html {
 
 body {
   overflow-x: hidden;
-  @media (max-width: 1440px) {
-    max-width: 100vw;
-    overflow: hidden;
-  }
 }
 *,
 *::before,
