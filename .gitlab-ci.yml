@@ -8,7 +8,7 @@ Build:
   script:
     - yarn install
     - yarn build
-    - yarn export
+    - yarn generate
   artifacts:
     paths:
       - build/
