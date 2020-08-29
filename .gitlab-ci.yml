@@ -4,5 +4,6 @@ upload to s3:
     entrypoint: [""]
   script:
     - aws configure set region ru-central1
+    - aws --endpoint-url=https://storage.yandexcloud.net s3 mb s3://$S3_BUCKET/
     - touch foo.txt
-    - aws s3 cp foo.txt s3://$S3_BUCKET/foo.txt
+    - aws s3 cp foo.txt s3://$S3_BUCKET/
