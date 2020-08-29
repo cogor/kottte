@@ -3,7 +3,6 @@ deploy:
   image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
   script:
     - aws configure set region ru-central1
-    - aws --endpoint-url=https://storage.yandexcloud.net
     - touch foo.txt
     - aws --endpoint-url=https://storage.yandexcloud.net \
       s3 cp --recursive /foo.txt s3://$S3_BUCKET/
