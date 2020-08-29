@@ -11,7 +11,7 @@ Build:
     - yarn generate
   artifacts:
     paths:
-      - build/
+      - dist/
     expire_in: 1 day
 
 deploy:
@@ -24,4 +24,4 @@ deploy:
     S3_BUCKET_NAME: $S3_BUCKET
   script:
     - touch foo.txt
-    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive ./build s3://$S3_BUCKET/
+    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive ./dist s3://$S3_BUCKET/
