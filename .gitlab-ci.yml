@@ -7,7 +7,6 @@ Build:
   image: node:12
   script:
     - yarn install
-    - yarn build
     - yarn generate
   artifacts:
     paths:
@@ -24,4 +23,4 @@ deploy:
     S3_BUCKET_NAME: $S3_BUCKET
   script:
     - touch foo.txt
-    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive ./dist s3://$S3_BUCKET/
+    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive --include "*" ./dist s3://$S3_BUCKET/
