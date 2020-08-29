@@ -8,4 +8,4 @@ deploy:
     S3_BUCKET_NAME: $S3_BUCKET
   script:
     - touch foo.txt
-    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive local_files/ s3://$S3_BUCKET/
+    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive ./ s3://vue-admin/
