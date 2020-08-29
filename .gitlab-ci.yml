@@ -19,6 +19,10 @@ Build:
       - dist/
     expire_in: 1 day
 
+######################
+##  DELIVERY STAGE  ##
+######################
+
 deploy:
   stage: deploy
   image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
