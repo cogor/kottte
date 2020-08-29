@@ -1,3 +1,19 @@
+######################
+##   BUILD STAGE    ##
+######################
+
+Build:
+  stage: build
+  image: node:12
+  script:
+    - yarn install
+    - yarn build
+    - yarn export
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 day
+
 deploy:
   stage: deploy
   image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
@@ -8,4 +24,4 @@ deploy:
     S3_BUCKET_NAME: $S3_BUCKET
   script:
     - touch foo.txt
-    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive ./ s3://vue-admin/
+    - aws s3 cp --endpoint-url=https://storage.yandexcloud.net --recursive ./build s3://$S3_BUCKET/
