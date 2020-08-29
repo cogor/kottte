@@ -28,5 +28,4 @@ deploy:
     AWS_REGION: $AWS_DEFAULT_REGION
     S3_BUCKET_NAME: $S3_BUCKET
   script:
-    - touch foo.txt
-    - aws s3 cp --endpoint-url=https://hb.bizmrg.com/ --recursive --include "*" ./dist s3://$S3_BUCKET/
+    - aws s3 cp --recursive --include "*" ./dist s3://$S3_BUCKET/
