@@ -611,11 +611,7 @@ export default {
     }
     .price-block {
       width: 100%;
-      background: rgba(18, 18, 18, 0.87);
-      border: 0.5px solid #a4a4a4;
       box-sizing: border-box;
-      box-shadow: 0 0 40px #bababa, 6px 0 8px rgba(180, 180, 180, 0.5);
-      backdrop-filter: blur(12px);
       border-radius: 16px;
       padding-top: 32px;
       padding-bottom: 36px;
@@ -624,10 +620,39 @@ export default {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      position: relative;
+      &:before {
+        box-shadow: 0 0 40px #bababa, 6px 0 8px rgba(180, 180, 180, 0.5);
+        background: rgba(18, 18, 18, 0.87);
+        border: 0.5px solid #a4a4a4;
+        backdrop-filter: blur(12px);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        border-radius: 16px;
+        z-index: -1;
+        opacity: 0.24;
+      }
       &.highlight {
-        border: 0.5px solid #de1c4b;
-        box-shadow: 0 0 40px #de1c4b, 6px 0 8px rgba(222, 28, 75, 0.5);
         transform: scale(1.06);
+        &:before {
+          background: rgba(18, 18, 18, 0.87);
+          border: 0.5px solid #de1c4b;
+          box-shadow: 0 0 40px #de1c4b, 6px 0 8px rgba(222, 28, 75, 0.5);
+          backdrop-filter: blur(12px);
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: '';
+          border-radius: 16px;
+          z-index: 1;
+          opacity: 0.24;
+        }
         .price-amount {
           font-size: 40px;
           color: #de1c4b;
