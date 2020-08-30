@@ -32,4 +32,5 @@ deploy:
     AWS_REGION: $AWS_DEFAULT_REGION
     S3_BUCKET_NAME: $S3_BUCKET
   script:
+    - aws s3 rm s3://$S3_BUCKET/ --recursive
     - aws s3 cp --recursive --include "*" ./dist s3://$S3_BUCKET/
