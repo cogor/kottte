@@ -113,6 +113,104 @@
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
       </div>
     </section>
+    <section v-lazy-container="{ selector: 'img' }" class="fifth-block">
+      <img class="fifth-block__back" data-src="/fifth-back.png" alt="" />
+      <img class="fifth-block__front" data-src="/fifth-front.png" alt="" />
+      <div class="work-block left">
+        <img data-src="/ural-main.png" alt="Ural Art Bronze project" />
+      </div>
+      <div class="work-block right">
+        <img data-src="/andrag.png" alt="Andrag project" />
+      </div>
+      <div class="work-block left">
+        <img data-src="/med.png" alt="Medovkrym project" />
+      </div>
+    </section>
+    <section class="sixth-block">
+      <h2>Сколько стоит?</h2>
+      <div class="type">
+        Сайт визитка <span>/</span> Лендинг <span>/</span> Портфолио
+      </div>
+      <div class="work-desc">Дизайн + разработка + адаптация + поддержка</div>
+      <div class="price-list">
+        <div class="price-block">
+          <div class="price-block__header">
+            <div class="price-title">Минималка</div>
+            <div class="free-hosting">Бесплатный хостинг</div>
+          </div>
+          <div class="price-block__features">
+            <div class="price-feature">
+              <div class="price-feature__description">Экономно</div>
+            </div>
+          </div>
+          <div class="price-block__footer">
+            <div class="price-duration">
+              <div class="duration-title">до 20 рабочих дней</div>
+            </div>
+            <div class="price-amount">25 000 ₽</div>
+          </div>
+        </div>
+        <div class="price-block highlight">
+          <div class="price-block__header">
+            <div class="price-title">Оптимум</div>
+            <div class="free-hosting">Бесплатный хостинг</div>
+          </div>
+          <div class="price-block__features">
+            <div class="price-feature">
+              <div class="price-feature__title">3 месяца</div>
+              <div class="price-feature__description">Бесплатная поддержка</div>
+              <div class="price-feature__annotation">
+                Затем 2 часа поддержки в месяц бесплатно*
+              </div>
+            </div>
+            <div class="price-feature">
+              <div class="price-feature__description">
+                Уникальная креативная концепция
+              </div>
+            </div>
+          </div>
+          <div class="price-block__footer">
+            <div class="price-duration">
+              <div class="duration-title">до 20 рабочих дней</div>
+              <div class="duration-description">
+                всё внимание уделяем только вашему проекту
+              </div>
+            </div>
+            <div class="price-amount">40 000 ₽</div>
+          </div>
+        </div>
+        <div class="price-block">
+          <div class="price-block__header">
+            <div class="price-title">Максималка</div>
+            <div class="free-hosting">Бесплатный хостинг</div>
+          </div>
+          <div class="price-block__features">
+            <div class="price-feature">
+              <div class="price-feature__title">6 месяцев</div>
+              <div class="price-feature__description">Бесплатная поддержка</div>
+              <div class="price-feature__annotation">
+                Затем 5 часов поддержки в месяц бесплатно*
+              </div>
+            </div>
+            <div class="price-feature">
+              <div class="price-feature__description">
+                Уникальная креативная<br />
+                концепция + айдентика
+              </div>
+            </div>
+          </div>
+          <div class="price-block__footer">
+            <div class="price-duration">
+              <div class="duration-title">до 14 рабочих дней</div>
+              <div class="duration-description">
+                всё внимание уделяем только вашему проекту
+              </div>
+            </div>
+            <div class="price-amount">80 000 ₽</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -350,6 +448,7 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 400px;
     @media (max-width: 1440px) {
       max-width: 100%;
     }
@@ -389,6 +488,192 @@ export default {
         -6px 4px 8px rgba(99, 99, 99, 0.25);
       z-index: 29;
       margin-top: -190px;
+    }
+  }
+  .fifth-block {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 440px calc(50% - 650px) 550px;
+    .fifth-block__back {
+      max-width: 1377px;
+      height: auto;
+      position: absolute;
+      z-index: 1;
+      object-fit: contain;
+      left: calc(50% - 688px);
+      top: 0;
+    }
+    .fifth-block__front {
+      position: absolute;
+      z-index: 20;
+      height: auto;
+      object-fit: contain;
+      max-width: 1332px;
+      right: calc(50% - 666px);
+      top: -130px;
+    }
+    .work-block {
+      background: rgba(18, 18, 18, 0.87);
+      border: 1px solid #2f2f2f;
+      box-sizing: border-box;
+      box-shadow: 0 12px 6px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      max-width: 1000px;
+      z-index: 15;
+      padding: 40px;
+      margin-bottom: 88px;
+      img {
+        max-width: 100%;
+        height: auto;
+        z-index: 40;
+      }
+      &.left {
+        align-self: flex-start;
+      }
+      &.right {
+        align-self: flex-end;
+      }
+    }
+  }
+  .sixth-block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 calc(50% - 650px) 0;
+    h2 {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 85px;
+      line-height: 100%;
+      text-align: center;
+      color: #ebe9f3;
+      margin-bottom: 80px;
+    }
+    .type {
+      font-size: 32px;
+      line-height: 150%;
+      text-align: center;
+      color: #ffffff;
+      span {
+        color: #4d289f;
+      }
+    }
+    .work-desc {
+      font-size: 20px;
+      line-height: 150%;
+      text-align: center;
+      color: #ebe9f3;
+      margin-bottom: 120px;
+    }
+    .price-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 60px;
+      width: 100%;
+      margin-bottom: 120px;
+    }
+    .price-block {
+      width: 100%;
+      background: rgba(18, 18, 18, 0.87);
+      border: 0.5px solid #a4a4a4;
+      box-sizing: border-box;
+      box-shadow: 0 0 40px #bababa, 6px 0 8px rgba(180, 180, 180, 0.5);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding-top: 32px;
+      padding-bottom: 36px;
+      height: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      &.highlight {
+        border: 0.5px solid #de1c4b;
+        box-shadow: 0 0 40px #de1c4b, 6px 0 8px rgba(222, 28, 75, 0.5);
+        transform: scale(1.06);
+        .price-amount {
+          font-size: 40px;
+          color: #de1c4b;
+        }
+      }
+      .price-title {
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 100%;
+        text-align: center;
+        color: #a8a6b1;
+      }
+      .free-hosting {
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #ebe9f3;
+        margin-top: 44px;
+      }
+      .price-block__features {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 48px;
+      }
+      .price-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .price-feature__description {
+          font-size: 16px;
+          line-height: 120%;
+          text-align: center;
+          color: #ebe9f3;
+        }
+        .price-feature__title {
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 100%;
+          text-align: center;
+          color: #ebe9f3;
+          margin-bottom: 4px;
+        }
+        .price-feature__annotation {
+          font-weight: normal;
+          font-size: 13px;
+          line-height: 16px;
+          text-align: center;
+          color: #c7c5cd;
+          margin-top: 8px;
+          max-width: 180px;
+        }
+      }
+      .price-duration {
+        .duration-title {
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 100%;
+          text-align: center;
+          color: #ebe9f3;
+        }
+        .duration-description {
+          font-size: 16px;
+          line-height: 150%;
+          text-align: center;
+          color: #ebe9f3;
+          max-width: 270px;
+          margin-top: 4px;
+        }
+      }
+      .price-amount {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 100%;
+        text-align: center;
+        color: #ebe9f3;
+        margin-top: 64px;
+      }
     }
   }
 }
