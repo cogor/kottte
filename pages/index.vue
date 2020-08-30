@@ -210,6 +210,17 @@
           </div>
         </div>
       </div>
+      <div class="hourly-support-price">
+        *час платной технической поддержки стоит 1200 ₽
+      </div>
+      <h2>А ещё мы делаем сайты-каталоги</h2>
+      <h3>Пишите и мы всё обговорим</h3>
+      <button>
+        <img src="/cta.png" alt="" />
+      </button>
+      <div class="bottom-cat">
+        <img src="/botton-cat.png" alt="" />
+      </div>
     </section>
   </div>
 </template>
@@ -271,7 +282,10 @@ export default {
       }
       .cta {
         width: 84px;
-        cursor: pointer;
+        img {
+          cursor: pointer;
+          border-radius: 50%;
+        }
       }
     }
     .scroll-trigger {
@@ -554,6 +568,23 @@ export default {
       text-align: center;
       color: #ebe9f3;
       margin-bottom: 80px;
+      max-width: 860px;
+    }
+    h3 {
+      font-size: 32px;
+      line-height: 150%;
+      text-align: center;
+      color: #ebe9f3;
+      margin-top: 24px;
+    }
+    button {
+      background: transparent;
+      border: 0;
+      margin-top: 80px;
+      img {
+        height: 140px;
+        width: 140px;
+      }
     }
     .type {
       font-size: 32px;
@@ -673,6 +704,23 @@ export default {
         text-align: center;
         color: #ebe9f3;
         margin-top: 64px;
+      }
+    }
+    .hourly-support-price {
+      font-size: 16px;
+      line-height: 120%;
+      text-align: center;
+      color: #ebe9f3;
+      margin-bottom: 160px;
+    }
+    .bottom-cat {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin-top: 60px;
+      img {
+        width: 500px;
+        height: auto;
       }
     }
   }
