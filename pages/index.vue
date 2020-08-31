@@ -253,6 +253,7 @@ export default {
     flex-direction: column;
     min-height: 90vh;
     position: relative;
+    overflow-x: hidden;
     .circle-one {
       pointer-events: none;
       user-select: none;
@@ -272,6 +273,10 @@ export default {
       position: absolute;
       max-width: 880px;
       top: 30%;
+      @media (max-width: 768px) {
+        max-width: 600px;
+        top: 27%;
+      }
       .text {
         font-family: 'IBM Plex Mono', monospace;
         font-weight: 300;
@@ -279,6 +284,9 @@ export default {
         line-height: 120%;
         text-transform: uppercase;
         color: #ebe9f3;
+        @media (max-width: 768px) {
+          font-size: 32px;
+        }
       }
       .cta {
         width: 84px;
@@ -299,12 +307,22 @@ export default {
       text-transform: uppercase;
       color: #8f74fb;
       transform: rotate(90deg);
-      margin-bottom: 120px;
+      margin-bottom: 195px;
+      @media (max-width: 768px) {
+        margin-bottom: 185px;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 185px;
+      }
     }
   }
   .second-block {
     position: relative;
     min-height: 940px;
+    overflow-x: hidden;
+    @media (max-width: 768px) {
+      min-height: 700px;
+    }
     .second-block__back {
       max-width: 1200px;
       height: auto;
@@ -312,6 +330,10 @@ export default {
       z-index: 1;
       object-fit: contain;
       left: calc(50% - 600px);
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
     }
     .second-block__front {
       position: absolute;
@@ -320,6 +342,10 @@ export default {
       object-fit: contain;
       max-width: 1070px;
       left: calc(50% - 610px);
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
     }
     .second-block_middle {
       position: absolute;
@@ -333,12 +359,20 @@ export default {
         width: 100%;
         position: relative;
         margin-right: 13%;
+        @media (max-width: 768px) {
+          margin-right: 0;
+          max-width: 650px;
+        }
         img {
           z-index: 10;
           width: 100%;
           max-width: 816px;
           height: auto;
           top: 45px;
+          @media (max-width: 768px) {
+            max-width: 650px;
+            height: auto;
+          }
         }
         .time {
           font-style: italic;
@@ -352,6 +386,12 @@ export default {
           top: 330px;
           z-index: 11;
           text-align: center;
+          @media (max-width: 768px) {
+            width: 100%;
+            left: 0;
+            top: 270px;
+            font-size: 60px;
+          }
         }
         .wzuh {
           font-style: italic;
@@ -364,6 +404,11 @@ export default {
           right: 510px;
           top: 274px;
           z-index: 11;
+          @media (max-width: 768px) {
+            width: 100%;
+            left: 0;
+            top: 170px;
+          }
         }
         .go {
           font-style: italic;
@@ -376,6 +421,11 @@ export default {
           right: 840px;
           top: 520px;
           z-index: 11;
+          @media (max-width: 768px) {
+            width: 100%;
+            left: -50px;
+            top: 310px;
+          }
         }
         .annotation {
           font-style: italic;
@@ -389,6 +439,11 @@ export default {
           top: 581px;
           z-index: 11;
           width: 490px;
+          @media (max-width: 768px) {
+            width: 100%;
+            left: 0;
+            top: 440px;
+          }
         }
       }
     }
@@ -400,6 +455,10 @@ export default {
     padding-top: 172px;
     position: relative;
     min-height: 1560px;
+    overflow-x: hidden;
+    @media (max-width: 768px) {
+      min-height: 1000px;
+    }
     @media (max-width: 1440px) {
       max-width: 100%;
     }
@@ -430,6 +489,9 @@ export default {
       line-height: 100%;
       text-align: center;
       color: #ebe9f3;
+      @media (max-width: 768px) {
+        font-size: 60px;
+      }
     }
     .third-block__back {
       max-width: 1136px;
@@ -439,6 +501,10 @@ export default {
       object-fit: contain;
       left: calc(50% - 550px);
       top: 0;
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
     }
     .third-block__front {
       position: absolute;
@@ -448,6 +514,10 @@ export default {
       max-width: 1146px;
       left: calc(50% - 570px);
       top: 0;
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
     }
     .item {
       font-weight: 500;
@@ -463,6 +533,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 400px;
+    overflow-x: hidden;
     @media (max-width: 1440px) {
       max-width: 100%;
     }
@@ -511,6 +582,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     padding: 440px calc(50% - 650px) 550px;
+    overflow-x: hidden;
     .fifth-block__back {
       max-width: 1377px;
       height: auto;
@@ -560,6 +632,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     padding: 0 calc(50% - 650px) 0;
+    overflow-x: hidden;
     h2 {
       font-style: italic;
       font-weight: 900;
