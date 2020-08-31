@@ -230,6 +230,13 @@ export default {
   head() {
     return {
       title: 'Kottte',
+      description: 'Создаём простые сайты для решения непростых задач',
+      meta: [
+        { hid: 'og:title', name: 'title', content: 'Kottte' },
+        { hid: 'og:description', name: 'description', content: 'Создаём простые сайты для решения непростых задач' },
+        { name: 'og:image', content: '/site.png' },
+        { name: 'og:url', content: 'https://kottte.ru' },
+      ]
     }
   },
 }
