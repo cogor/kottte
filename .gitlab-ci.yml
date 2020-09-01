@@ -10,7 +10,7 @@ cache:
 
 Build:
   stage: build
-  image: node:12
+  image: node:latest
   script:
     - yarn install
     - yarn generate
