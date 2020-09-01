@@ -40,8 +40,16 @@
     </header>
     <section class="first-block">
       <img
+        v-if="!$device.isMobile"
         class="circle-one"
         src="/first-circle.png"
+        alt="First circle"
+        draggable="false"
+      />
+      <img
+        v-if="$device.isMobile"
+        class="circle-one"
+        src="/first-circle-mobile.png"
         alt="First circle"
         draggable="false"
       />
@@ -55,19 +63,22 @@
       </div>
       <div class="scroll-trigger">скрооооооолль</div>
     </section>
-    <section v-lazy-container="{ selector: 'img' }" class="second-block">
+    <section class="second-block">
       <img
-        data-src="/second-back@2x.png"
+        v-if="!$device.isMobile"
+        src="/second-back@2x.png"
+        class="second-block__back"
+        alt="second block back image"
+      />
+      <img
+        v-if="$device.isMobile"
+        src="/second-back-mobile.png"
         class="second-block__back"
         alt="second block back image"
       />
       <div class="second-block_middle">
         <div class="second-block__circle">
-          <img
-            data-src="/second-circle.png"
-            src="/second-circle.png"
-            alt="Second circle"
-          />
+          <img src="/second-circle.png" alt="Second circle" />
           <div class="time">
             0.4<br />
             секунды
@@ -80,11 +91,62 @@
           </div>
         </div>
       </div>
-      <img class="second-block__front" data-src="/second-front.png" alt="" />
+      <img
+        v-if="!$device.isMobile"
+        class="second-block__front"
+        src="/second-front.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isMobile"
+        class="second-block__front"
+        src="/second-front-mobile.png"
+        alt=""
+      />
     </section>
-    <section v-lazy-container="{ selector: 'img' }" class="third-block">
-      <img class="third-block__back" data-src="/third-back.png" alt="" />
-      <img class="third-block__front" data-src="/third-front.png" alt="" />
+    <section class="third-block">
+      <img
+        v-if="$device.isDesktop"
+        class="third-block__back"
+        src="/third-back.png"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        v-if="$device.isTablet"
+        class="third-block__back"
+        src="/third-back-tablet.png"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        v-if="$device.isMobile"
+        class="third-block__back"
+        src="/third-back-mobile.png"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        v-if="$device.isDesktop"
+        class="third-block__front"
+        src="/third-front.png"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        v-if="$device.isTablet"
+        class="third-block__front"
+        src="/third-front-tablet.png"
+        alt=""
+        loading="lazy"
+      />
+      <img
+        v-if="$device.isMobile"
+        class="third-block__front"
+        src="/third-front-mobile.png"
+        alt=""
+        loading="lazy"
+      />
       <h2>Но почему это важно?</h2>
       <div class="list">
         <div class="item first-cause">
@@ -105,25 +167,92 @@
         </div>
       </div>
     </section>
-    <section v-lazy-container="{ selector: 'img' }" class="fourth-block">
-      <img class="fourth-circle" data-src="/fourth-circle.png" alt="" />
-      <img class="fourth-block__back" data-src="/fourth-back.png" alt="" />
-      <img class="fourth-block__front" data-src="/fourth-front.png" alt="" />
+    <section class="fourth-block">
+      <img
+        v-if="$device.isDesktop"
+        class="fourth-block__back"
+        src="/fourth-back.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isTablet"
+        class="fourth-block__back"
+        src="/fourth-back-tablet.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isMobile"
+        class="fourth-block__back"
+        src="/fourth-back-mobile.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isDesktop"
+        class="fourth-block__front"
+        src="/fourth-front.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isTablet"
+        class="fourth-block__front"
+        src="/fourth-front-tablet.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isMobile"
+        class="fourth-block__front"
+        src="/fourth-front-mobile.png"
+        alt=""
+      />
+      <img
+        v-if="!$device.isMobile"
+        class="fourth-circle"
+        src="/fourth-circle.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isMobile"
+        class="fourth-circle"
+        src="/fourth-circle-mobile.png"
+        alt=""
+      />
       <div class="text">
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
       </div>
     </section>
-    <section v-lazy-container="{ selector: 'img' }" class="fifth-block">
-      <img class="fifth-block__back" data-src="/fifth-back.png" alt="" />
-      <img class="fifth-block__front" data-src="/fifth-front.png" alt="" />
+    <section class="fifth-block">
+      <img
+        v-if="!$device.isMobile"
+        class="fifth-block__back"
+        src="/fifth-back.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isMobile"
+        class="fifth-block__back"
+        src="/fifth-back-mobile.png"
+        alt=""
+      />
+      <img
+        v-if="!$device.isMobile"
+        class="fifth-block__front"
+        src="/fifth-front.png"
+        alt=""
+      />
+      <img
+        v-if="$device.isMobile"
+        class="fifth-block__front"
+        src="/fifth-front-mobile.png"
+        alt=""
+      />
       <div class="work-block left">
-        <img data-src="/ural-main.png" alt="Ural Art Bronze project" />
+        <img src="/ural-main.png" alt="Ural Art Bronze project" />
       </div>
       <div class="work-block right">
-        <img data-src="/andrag.png" alt="Andrag project" />
+        <img src="/andrag.png" alt="Andrag project" />
       </div>
       <div class="work-block left">
-        <img data-src="/med.png" alt="Medovkrym project" />
+        <img src="/med.png" alt="Medovkrym project" />
       </div>
     </section>
     <section class="sixth-block">
@@ -219,7 +348,8 @@
         <img src="/cta.png" alt="" />
       </button>
       <div class="bottom-cat">
-        <img src="/botton-cat.png" alt="" />
+        <img v-if="!$device.isMobile" src="/botton-cat.png" alt="" />
+        <img v-if="$device.isMobile" src="/botton-cat-mobile.png" alt="" />
       </div>
     </section>
   </div>
@@ -233,10 +363,14 @@ export default {
       description: 'Создаём простые сайты для решения непростых задач',
       meta: [
         { hid: 'og:title', name: 'title', content: 'Kottte' },
-        { hid: 'og:description', name: 'description', content: 'Создаём простые сайты для решения непростых задач' },
+        {
+          hid: 'og:description',
+          name: 'description',
+          content: 'Создаём простые сайты для решения непростых задач',
+        },
         { name: 'og:image', content: '/site.png' },
         { name: 'og:url', content: 'https://kottte.ru' },
-      ]
+      ],
     }
   },
 }
@@ -261,10 +395,17 @@ export default {
     min-height: 90vh;
     position: relative;
     overflow-x: hidden;
+    @media (max-width: 576px) {
+      min-height: 100vh;
+    }
     .circle-one {
       pointer-events: none;
       user-select: none;
       margin-top: -50px;
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        margin-top: 0;
+      }
     }
     .glass-panel {
       padding: 16px 24px;
@@ -283,6 +424,11 @@ export default {
       @media (max-width: 768px) {
         max-width: 600px;
         top: 27%;
+        justify-content: space-between;
+      }
+      @media (max-width: 576px) {
+        max-width: calc(100vw - 48px);
+        top: 20%;
       }
       .text {
         font-family: 'IBM Plex Mono', monospace;
@@ -293,6 +439,10 @@ export default {
         color: #ebe9f3;
         @media (max-width: 768px) {
           font-size: 32px;
+        }
+        @media (max-width: 576px) {
+          font-size: 24px;
+          max-width: 60%;
         }
       }
       .cta {
@@ -330,6 +480,9 @@ export default {
     @media (max-width: 768px) {
       min-height: 700px;
     }
+    @media (max-width: 576px) {
+      min-height: 570px;
+    }
     .second-block__back {
       max-width: 1200px;
       height: auto;
@@ -339,6 +492,11 @@ export default {
       left: calc(50% - 600px);
       @media (max-width: 768px) {
         max-width: 100vw;
+        left: 0;
+      }
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        width: 100vw;
         left: 0;
       }
     }
@@ -352,6 +510,11 @@ export default {
       @media (max-width: 768px) {
         max-width: 100vw;
         left: 0;
+      }
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        width: 90vw;
+        left: -12px;
       }
     }
     .second-block_middle {
@@ -369,6 +532,9 @@ export default {
         @media (max-width: 768px) {
           margin-right: 0;
           max-width: 650px;
+        }
+        @media (max-width: 576px) {
+          margin-right: -85px;
         }
         img {
           z-index: 10;
@@ -399,6 +565,10 @@ export default {
             top: 270px;
             font-size: 60px;
           }
+          @media (max-width: 576px) {
+            font-size: 32px;
+            top: 180px;
+          }
         }
         .wzuh {
           font-style: italic;
@@ -414,7 +584,10 @@ export default {
           @media (max-width: 768px) {
             width: 100%;
             left: 0;
-            top: 170px;
+            top: 150px;
+          }
+          @media (max-width: 576px) {
+            font-size: 16px;
           }
         }
         .go {
@@ -430,8 +603,12 @@ export default {
           z-index: 11;
           @media (max-width: 768px) {
             width: 100%;
-            left: -50px;
+            left: -40px;
             top: 310px;
+          }
+          @media (max-width: 576px) {
+            font-size: 16px;
+            top: 240px;
           }
         }
         .annotation {
@@ -448,8 +625,12 @@ export default {
           width: 490px;
           @media (max-width: 768px) {
             width: 100%;
-            left: 0;
+            left: 12px;
             top: 440px;
+          }
+          @media (max-width: 576px) {
+            font-size: 16px;
+            top: 280px;
           }
         }
       }
@@ -461,32 +642,65 @@ export default {
   .third-block {
     padding-top: 172px;
     position: relative;
-    min-height: 1560px;
+    min-height: 1600px;
     overflow-x: hidden;
     @media (max-width: 768px) {
-      min-height: 1000px;
+      min-height: 1100px;
     }
     @media (max-width: 1440px) {
       max-width: 100%;
     }
+    @media (max-width: 576px) {
+      min-height: 1160px;
+    }
     .list {
       padding-left: calc(50% - 500px);
       padding-right: calc(50% - 500px);
+      z-index: 30;
+      position: relative;
+      @media (max-width: 768px) {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
       .first-cause {
         margin-top: 122px;
+        @media (max-width: 768px) {
+          margin-top: 60px;
+        }
+        @media (max-width: 576px) {
+          margin-top: 78px;
+        }
       }
       .second-cause {
         margin-top: 46px;
         display: flex;
         justify-content: flex-end;
+        @media (max-width: 768px) {
+          margin-top: 24px;
+        }
+        @media (max-width: 576px) {
+          margin-top: 36px;
+        }
       }
       .third-cause {
         margin-top: 190px;
+        @media (max-width: 768px) {
+          margin-top: 24px;
+        }
+        @media (max-width: 576px) {
+          margin-top: 150px;
+        }
       }
       .fourth-cause {
         margin-top: 46px;
         display: flex;
         justify-content: flex-end;
+        @media (max-width: 768px) {
+          margin-top: 80px;
+        }
+        @media (max-width: 576px) {
+          margin-top: 96px;
+        }
       }
     }
     h2 {
@@ -496,8 +710,14 @@ export default {
       line-height: 100%;
       text-align: center;
       color: #ebe9f3;
+      position: relative;
+      z-index: 19;
       @media (max-width: 768px) {
         font-size: 60px;
+      }
+      @media (max-width: 576px) {
+        font-size: 38px;
+        margin-top: 105px;
       }
     }
     .third-block__back {
@@ -510,6 +730,11 @@ export default {
       top: 0;
       @media (max-width: 768px) {
         max-width: 100vw;
+        left: 0;
+      }
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        width: 100vw;
         left: 0;
       }
     }
@@ -525,12 +750,25 @@ export default {
         max-width: 100vw;
         left: 0;
       }
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        width: 100vw;
+        left: 0;
+        top: 60px;
+      }
     }
     .item {
       font-weight: 500;
       font-size: 32px;
       line-height: 150%;
       color: #ebe9f3;
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 150%;
+      }
     }
   }
   .fourth-block {
@@ -539,10 +777,16 @@ export default {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 400px;
     overflow-x: hidden;
+    min-height: 1200px;
     @media (max-width: 1440px) {
       max-width: 100%;
+      min-height: 830px;
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+      line-height: 150%;
+      min-height: 1000px;
     }
     .fourth-block__back {
       max-width: 1159px;
@@ -552,6 +796,15 @@ export default {
       object-fit: contain;
       left: calc(50% - 580px);
       top: 0;
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
+      @media (max-width: 576px) {
+        max-width: 90vw;
+        left: 32px;
+        top: 0;
+      }
     }
     .fourth-block__front {
       position: absolute;
@@ -561,12 +814,21 @@ export default {
       max-width: 1196px;
       left: calc(50% - 640px);
       top: -130px;
+      @media (max-width: 768px) {
+        max-width: 90vw;
+        left: 32px;
+        top: 110px;
+      }
     }
     .fourth-circle {
       z-index: 30;
       position: relative;
       width: 772px;
       height: auto;
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
     }
     .text {
       max-width: 612px;
@@ -578,8 +840,18 @@ export default {
       color: #edecf0;
       text-shadow: -10px 12px 12px rgba(97, 97, 97, 0.15),
         -6px 4px 8px rgba(99, 99, 99, 0.25);
-      z-index: 29;
       margin-top: -190px;
+      position: relative;
+      z-index: 20;
+      @media (max-width: 1440px) {
+        margin-top: -140px;
+      }
+      @media (max-width: 576px) {
+        font-size: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: -180px;
+      }
     }
   }
   .fifth-block {
@@ -590,6 +862,13 @@ export default {
     flex-direction: column;
     padding: 440px calc(50% - 650px) 550px;
     overflow-x: hidden;
+    @media (max-width: 768px) {
+      padding: 100px 32px 100px;
+    }
+    @media (max-width: 576px) {
+      padding: 150px 0 450px;
+      min-height: 1900px;
+    }
     .fifth-block__back {
       max-width: 1377px;
       height: auto;
@@ -598,6 +877,14 @@ export default {
       object-fit: contain;
       left: calc(50% - 688px);
       top: 0;
+      @media (max-width: 768px) {
+        max-width: 100vw;
+        left: 0;
+      }
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        width: 100vw;
+      }
     }
     .fifth-block__front {
       position: absolute;
@@ -607,6 +894,16 @@ export default {
       max-width: 1332px;
       right: calc(50% - 666px);
       top: -130px;
+      @media (max-width: 768px) {
+        width: 100vw;
+        max-width: 100vw;
+        left: 0;
+        top: 0;
+      }
+      @media (max-width: 576px) {
+        max-width: 100vw;
+        width: 100vw;
+      }
     }
     .work-block {
       background: rgba(18, 18, 18, 0.87);
@@ -630,6 +927,12 @@ export default {
       &.right {
         align-self: flex-end;
       }
+      @media (max-width: 576px) {
+        padding: 16px;
+        margin-bottom: 80px;
+        max-width: calc(100% - 16px);
+        margin-left: 8px;
+      }
     }
   }
   .sixth-block {
@@ -640,6 +943,12 @@ export default {
     flex-direction: column;
     padding: 0 calc(50% - 650px) 0;
     overflow-x: hidden;
+    @media (max-width: 768px) {
+      padding: 0 24px 0;
+    }
+    @media (max-width: 576px) {
+      padding: 0;
+    }
     h2 {
       font-style: italic;
       font-weight: 900;
@@ -649,6 +958,14 @@ export default {
       color: #ebe9f3;
       margin-bottom: 80px;
       max-width: 860px;
+      @media (max-width: 768px) {
+        font-size: 64px;
+        margin-bottom: 32px;
+      }
+      @media (max-width: 576px) {
+        font-size: 38px;
+        margin-bottom: 50px;
+      }
     }
     h3 {
       font-size: 32px;
@@ -656,6 +973,14 @@ export default {
       text-align: center;
       color: #ebe9f3;
       margin-top: 24px;
+      @media (max-width: 768px) {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      @media (max-width: 576px) {
+        font-size: 20px;
+        margin-top: -12px;
+      }
     }
     button {
       background: transparent;
@@ -671,6 +996,10 @@ export default {
       line-height: 150%;
       text-align: center;
       color: #ffffff;
+      @media (max-width: 576px) {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
       span {
         color: #4d289f;
       }
@@ -681,6 +1010,13 @@ export default {
       text-align: center;
       color: #ebe9f3;
       margin-bottom: 120px;
+      @media (max-width: 768px) {
+        margin-bottom: 64px;
+      }
+      @media (max-width: 576px) {
+        font-size: 14px;
+        margin-bottom: 88px;
+      }
     }
     .price-list {
       display: grid;
@@ -688,6 +1024,13 @@ export default {
       grid-gap: 60px;
       width: 100%;
       margin-bottom: 120px;
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-gap: 64px;
+      }
+      @media (max-width: 576px) {
+        margin-bottom: 50px;
+      }
     }
     .price-block {
       width: 100%;
@@ -701,6 +1044,19 @@ export default {
       justify-content: space-between;
       align-items: center;
       position: relative;
+      @media (max-width: 768px) {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 576px) {
+        font-size: 20px;
+        margin-bottom: 8px;
+        width: 100%;
+        max-width: calc(100vw - 16px);
+        margin-left: 8px;
+        height: auto;
+      }
       &:before {
         box-shadow: 0 0 40px #bababa, 6px 0 8px rgba(180, 180, 180, 0.5);
         background: rgba(18, 18, 18, 0.87);
@@ -718,6 +1074,9 @@ export default {
       }
       &.highlight {
         transform: scale(1.06);
+        @media (max-width: 576px) {
+          transform: scale(1);
+        }
         &:before {
           background: rgba(18, 18, 18, 0.87);
           border: 0.5px solid #de1c4b;
@@ -737,6 +1096,17 @@ export default {
           font-size: 40px;
           color: #de1c4b;
         }
+        .price-title {
+          color: #ebe9f3;
+        }
+        .price-duration {
+          color: #ebe9f3;
+        }
+        .price-feature {
+          .price-feature__title {
+            color: #ebe9f3;
+          }
+        }
       }
       .price-title {
         font-weight: 900;
@@ -744,18 +1114,27 @@ export default {
         line-height: 100%;
         text-align: center;
         color: #a8a6b1;
+        @media (max-width: 576px) {
+          font-size: 32px;
+        }
       }
       .free-hosting {
         font-size: 16px;
         line-height: 150%;
         text-align: center;
-        color: #ebe9f3;
+        color: #a8a6b1;
         margin-top: 44px;
+        @media (max-width: 576px) {
+          font-size: 16px;
+        }
       }
       .price-block__features {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 48px;
+        @media (max-width: 576px) {
+          margin-top: 56px;
+        }
       }
       .price-feature {
         display: flex;
@@ -765,7 +1144,7 @@ export default {
           font-size: 16px;
           line-height: 120%;
           text-align: center;
-          color: #ebe9f3;
+          color: #a8a6b1;
         }
         .price-feature__title {
           font-weight: 900;
@@ -786,6 +1165,9 @@ export default {
         }
       }
       .price-duration {
+        @media (max-width: 576px) {
+          margin-top: 90px;
+        }
         .duration-title {
           font-weight: 900;
           font-size: 24px;
@@ -797,7 +1179,7 @@ export default {
           font-size: 16px;
           line-height: 150%;
           text-align: center;
-          color: #ebe9f3;
+          color: #a8a6b1;
           max-width: 270px;
           margin-top: 4px;
         }
@@ -817,6 +1199,10 @@ export default {
       text-align: center;
       color: #ebe9f3;
       margin-bottom: 160px;
+      @media (max-width: 576px) {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
     }
     .bottom-cat {
       display: flex;
@@ -826,6 +1212,12 @@ export default {
       img {
         width: 500px;
         height: auto;
+      }
+      @media (max-width: 576px) {
+        img {
+          max-height: 300px;
+          width: auto;
+        }
       }
     }
   }

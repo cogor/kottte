@@ -5,8 +5,7 @@ Vue.use(VueLazyload)
 
 // or with options
 Vue.use(VueLazyload, {
-  preLoad: 1.3,
-  error: 'img/shoe.png',
-  loading: 'img/shoe.png',
+  preLoad: 1.5,
   attempt: 1,
+  observer: true,
 })

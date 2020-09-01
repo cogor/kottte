@@ -67,6 +67,7 @@ export default {
         clickmap: true,
       },
     ],
+    '@nuxtjs/device',
   ],
   /*
    ** Axios module configuration
