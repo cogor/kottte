@@ -164,41 +164,49 @@
         class="fourth-block__back show-on-desktop"
         src="/fourth-back.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-block__back show-on-tablet"
         src="/fourth-back-tablet.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-block__back show-on-mobile"
         src="/fourth-back-mobile.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-block__front show-on-desktop"
         src="/fourth-front.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-block__front show-on-tablet"
         src="/fourth-front-tablet.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-block__front show-on-mobile"
         src="/fourth-front-mobile.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-circle show-on-desktop"
         src="/fourth-circle.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fourth-circle show-on-mobile"
         src="/fourth-circle-mobile.png"
         alt=""
+        loading="lazy"
       />
       <div class="text">
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
@@ -209,30 +217,38 @@
         class="fifth-block__back show-on-desktop"
         src="/fifth-back.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fifth-block__back show-on-mobile"
         src="/fifth-back-mobile.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fifth-block__front show-on-desktop"
         src="/fifth-front.png"
         alt=""
+        loading="lazy"
       />
       <img
         class="fifth-block__front show-on-mobile"
         src="/fifth-front-mobile.png"
         alt=""
+        loading="lazy"
       />
       <div class="work-block left">
-        <img src="/ural-main.png" alt="Ural Art Bronze project" />
+        <img
+          src="/ural-main.png"
+          alt="Ural Art Bronze project"
+          loading="lazy"
+        />
       </div>
       <div class="work-block right">
-        <img src="/andrag.png" alt="Andrag project" />
+        <img src="/andrag.png" alt="Andrag project" loading="lazy" />
       </div>
       <div class="work-block left">
-        <img src="/med.png" alt="Medovkrym project" />
+        <img src="/med.png" alt="Medovkrym project" loading="lazy" />
       </div>
     </section>
     <section class="sixth-block">
@@ -328,8 +344,18 @@
         <img src="/cta.png" alt="" />
       </button>
       <div class="bottom-cat">
-        <img class="show-on-desktop" src="/botton-cat.png" alt="" />
-        <img class="show-on-mobile" src="/botton-cat-mobile.png" alt="" />
+        <img
+          class="show-on-desktop"
+          src="/botton-cat.png"
+          alt=""
+          loading="lazy"
+        />
+        <img
+          class="show-on-mobile"
+          src="/botton-cat-mobile.png"
+          alt=""
+          loading="lazy"
+        />
       </div>
     </section>
   </div>
