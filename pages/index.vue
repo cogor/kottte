@@ -40,15 +40,13 @@
     </header>
     <section class="first-block">
       <img
-        v-if="!$device.isMobile"
-        class="circle-one"
+        class="circle-one show-on-desktop"
         src="/first-circle.png"
         alt="First circle"
         draggable="false"
       />
       <img
-        v-if="$device.isMobile"
-        class="circle-one"
+        class="circle-one show-on-mobile"
         src="/first-circle-mobile.png"
         alt="First circle"
         draggable="false"
@@ -58,23 +56,23 @@
           создаём простые сайты для решения непростых задач
         </div>
         <div class="cta">
-          <img src="/cta.png" alt="cta-btn" />
+          <img src="/cta.png" alt="cta-btn" loading="lazy" />
         </div>
       </div>
       <div class="scroll-trigger">скрооооооолль</div>
     </section>
     <section class="second-block">
       <img
-        v-if="!$device.isMobile"
         src="/second-back@2x.png"
-        class="second-block__back"
+        class="second-block__back show-on-desktop"
         alt="second block back image"
+        loading="lazy"
       />
       <img
-        v-if="$device.isMobile"
         src="/second-back-mobile.png"
-        class="second-block__back"
+        class="second-block__back show-on-mobile"
         alt="second block back image"
+        loading="lazy"
       />
       <div class="second-block_middle">
         <div class="second-block__circle">
@@ -92,57 +90,51 @@
         </div>
       </div>
       <img
-        v-if="!$device.isMobile"
-        class="second-block__front"
+        class="second-block__front show-on-desktop"
         src="/second-front.png"
         alt=""
+        loading="lazy"
       />
       <img
-        v-if="$device.isMobile"
-        class="second-block__front"
+        class="second-block__front show-on-mobile"
         src="/second-front-mobile.png"
         alt=""
+        loading="lazy"
       />
     </section>
     <section class="third-block">
       <img
-        v-if="$device.isDesktop"
-        class="third-block__back"
+        class="third-block__back show-on-desktop"
         src="/third-back.png"
         alt=""
         loading="lazy"
       />
       <img
-        v-if="$device.isTablet"
-        class="third-block__back"
+        class="third-block__back show-on-tablet"
         src="/third-back-tablet.png"
         alt=""
         loading="lazy"
       />
       <img
-        v-if="$device.isMobile"
-        class="third-block__back"
+        class="third-block__back show-on-mobile"
         src="/third-back-mobile.png"
         alt=""
         loading="lazy"
       />
       <img
-        v-if="$device.isDesktop"
-        class="third-block__front"
+        class="third-block__front show-on-desktop"
         src="/third-front.png"
         alt=""
         loading="lazy"
       />
       <img
-        v-if="$device.isTablet"
-        class="third-block__front"
+        class="third-block__front show-on-tablet"
         src="/third-front-tablet.png"
         alt=""
         loading="lazy"
       />
       <img
-        v-if="$device.isMobile"
-        class="third-block__front"
+        class="third-block__front show-on-mobile"
         src="/third-front-mobile.png"
         alt=""
         loading="lazy"
@@ -169,50 +161,42 @@
     </section>
     <section class="fourth-block">
       <img
-        v-if="$device.isDesktop"
-        class="fourth-block__back"
+        class="fourth-block__back show-on-desktop"
         src="/fourth-back.png"
         alt=""
       />
       <img
-        v-if="$device.isTablet"
-        class="fourth-block__back"
+        class="fourth-block__back show-on-tablet"
         src="/fourth-back-tablet.png"
         alt=""
       />
       <img
-        v-if="$device.isMobile"
-        class="fourth-block__back"
+        class="fourth-block__back show-on-mobile"
         src="/fourth-back-mobile.png"
         alt=""
       />
       <img
-        v-if="$device.isDesktop"
-        class="fourth-block__front"
+        class="fourth-block__front show-on-desktop"
         src="/fourth-front.png"
         alt=""
       />
       <img
-        v-if="$device.isTablet"
-        class="fourth-block__front"
+        class="fourth-block__front show-on-tablet"
         src="/fourth-front-tablet.png"
         alt=""
       />
       <img
-        v-if="$device.isMobile"
-        class="fourth-block__front"
+        class="fourth-block__front show-on-mobile"
         src="/fourth-front-mobile.png"
         alt=""
       />
       <img
-        v-if="!$device.isMobile"
-        class="fourth-circle"
+        class="fourth-circle show-on-desktop"
         src="/fourth-circle.png"
         alt=""
       />
       <img
-        v-if="$device.isMobile"
-        class="fourth-circle"
+        class="fourth-circle show-on-mobile"
         src="/fourth-circle-mobile.png"
         alt=""
       />
@@ -222,26 +206,22 @@
     </section>
     <section class="fifth-block">
       <img
-        v-if="!$device.isMobile"
-        class="fifth-block__back"
+        class="fifth-block__back show-on-desktop"
         src="/fifth-back.png"
         alt=""
       />
       <img
-        v-if="$device.isMobile"
-        class="fifth-block__back"
+        class="fifth-block__back show-on-mobile"
         src="/fifth-back-mobile.png"
         alt=""
       />
       <img
-        v-if="!$device.isMobile"
-        class="fifth-block__front"
+        class="fifth-block__front show-on-desktop"
         src="/fifth-front.png"
         alt=""
       />
       <img
-        v-if="$device.isMobile"
-        class="fifth-block__front"
+        class="fifth-block__front show-on-mobile"
         src="/fifth-front-mobile.png"
         alt=""
       />
@@ -348,8 +328,8 @@
         <img src="/cta.png" alt="" />
       </button>
       <div class="bottom-cat">
-        <img v-if="!$device.isMobile" src="/botton-cat.png" alt="" />
-        <img v-if="$device.isMobile" src="/botton-cat-mobile.png" alt="" />
+        <img class="show-on-desktop" src="/botton-cat.png" alt="" />
+        <img class="show-on-mobile" src="/botton-cat-mobile.png" alt="" />
       </div>
     </section>
   </div>
@@ -1219,6 +1199,21 @@ export default {
           width: auto;
         }
       }
+    }
+  }
+  .show-on-tablet {
+    @media (min-width: 576px) and (min-width: 1024px) {
+      display: none;
+    }
+  }
+  .show-on-desktop {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  .show-on-mobile {
+    @media (min-width: 576px) {
+      display: none;
     }
   }
 }
