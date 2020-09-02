@@ -37,7 +37,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '~/plugins/lazy-images.js', mode: 'client' }],
+  plugins: [],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -63,7 +63,6 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content',
     'nuxt-webfontloader',
     [
       '@nuxtjs/yandex-metrika',
@@ -72,8 +71,7 @@ export default {
         webvisor: true,
         clickmap: true,
       },
-    ],
-    '@nuxtjs/device',
+    ]
   ],
   /*
    ** Axios module configuration
