@@ -14,7 +14,7 @@ cache:
 
 Build:
   stage: build
-  image: node-alpine:latest
+  image: node:latest-alpine
   script:
     - yarn install
     - yarn generate
