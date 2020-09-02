@@ -99,6 +99,7 @@ export default {
         'postcss-cssnext': {},
         'postcss-sorting': {},
         'postcss-nested': {},
+        'postcss-100vh-fix': {},
         cssnano: {},
       },
       preset: {
