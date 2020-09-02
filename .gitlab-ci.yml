@@ -41,7 +41,7 @@ deploy:
     - sh .ci-notify.sh ✅
 
 notify_error:
-  stage: post
+  stage: notify
   script:
     - sh .ci-notify.sh ❌
   when: on_failure #deploy fail
