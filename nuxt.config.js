@@ -64,14 +64,6 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
     'nuxt-webfontloader',
-    [
-      '@nuxtjs/yandex-metrika',
-      {
-        id: '66891544',
-        webvisor: true,
-        clickmap: true,
-      },
-    ],
   ],
   /*
    ** Axios module configuration
