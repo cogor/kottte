@@ -71,7 +71,7 @@ export default {
         webvisor: true,
         clickmap: true,
       },
-    ]
+    ],
   ],
   /*
    ** Axios module configuration
