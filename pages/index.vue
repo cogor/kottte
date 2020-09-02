@@ -380,7 +380,7 @@
           </div>
           <div class="price-block__footer">
             <div class="price-duration">
-              <div class="duration-title">до 20 рабочих дней</div>
+              <div class="duration-title">до 10 рабочих дней</div>
               <div class="duration-description">
                 всё внимание уделяем только вашему проекту
               </div>
