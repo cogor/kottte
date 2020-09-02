@@ -53,7 +53,7 @@
         <img
           src="/first-circle.png"
           class="circle-one"
-          alt="logo"
+          alt="first circle"
           draggable="false"
         />
       </picture>
@@ -82,7 +82,7 @@
         <img
           src="/second-back@2x.png"
           class="second-block__back"
-          alt="logo"
+          alt="second block background"
           draggable="false"
         />
       </picture>
@@ -99,10 +99,17 @@
           class="second-block__front"
           loading="lazy"
         />
+        <img
+          src="/second-front.png"
+          class="second-block__front"
+          alt="second block background"
+          draggable="false"
+          loading="lazy"
+        />
       </picture>
       <div class="second-block_middle">
         <div class="second-block__circle">
-          <img src="/second-circle.png" alt="Second circle" />
+          <img src="/second-circle.png" alt="Second circle" loading="lazy" />
           <div class="time">
             0.4<br />
             секунды
@@ -115,56 +122,62 @@
           </div>
         </div>
       </div>
-      <img
-        class="second-block__front show-on-desktop"
-        src="/second-front.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="second-block__front show-on-mobile"
-        src="/second-front-mobile.png"
-        alt=""
-        loading="lazy"
-      />
     </section>
     <section class="third-block">
-      <img
-        class="third-block__back show-on-desktop"
-        src="/third-back.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="third-block__back show-on-tablet"
-        src="/third-back-tablet.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="third-block__back show-on-mobile"
-        src="/third-back-mobile.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="third-block__front show-on-desktop"
-        src="/third-front.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="third-block__front show-on-tablet"
-        src="/third-front-tablet.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="third-block__front show-on-mobile"
-        src="/third-front-mobile.png"
-        alt=""
-        loading="lazy"
-      />
+      <picture>
+        <source
+          srcset="/third-back.png"
+          media="(min-width: 768px)"
+          class="third-block__back"
+          loading="lazy"
+        />
+        <source
+          srcset="/third-back-tablet.png"
+          media="(min-width: 576px)"
+          class="third-block__back"
+          loading="lazy"
+        />
+        <source
+          srcset="/third-back-mobile.png"
+          media="(min-width: 320px)"
+          class="third-block__back"
+          loading="lazy"
+        />
+        <img
+          src="/third-back.png"
+          class="third-block__back"
+          alt="third block background"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/third-front.png"
+          media="(min-width: 768px)"
+          class="third-block__front"
+          loading="lazy"
+        />
+        <source
+          srcset="/third-front-tablet.png"
+          media="(min-width: 576px)"
+          class="third-block__front"
+          loading="lazy"
+        />
+        <source
+          srcset="/third-front-mobile.png"
+          media="(min-width: 320px)"
+          class="third-block__front"
+          loading="lazy"
+        />
+        <img
+          src="/third-front.png"
+          class="third-block__front"
+          alt="third block background"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
       <h2>Но почему это важно?</h2>
       <div class="list">
         <div class="item first-cause">
@@ -186,83 +199,128 @@
       </div>
     </section>
     <section class="fourth-block">
-      <img
-        class="fourth-block__back show-on-desktop"
-        src="/fourth-back.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-block__back show-on-tablet"
-        src="/fourth-back-tablet.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-block__back show-on-mobile"
-        src="/fourth-back-mobile.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-block__front show-on-desktop"
-        src="/fourth-front.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-block__front show-on-tablet"
-        src="/fourth-front-tablet.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-block__front show-on-mobile"
-        src="/fourth-front-mobile.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-circle show-on-desktop"
-        src="/fourth-circle.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fourth-circle show-on-mobile"
-        src="/fourth-circle-mobile.png"
-        alt=""
-        loading="lazy"
-      />
+      <picture>
+        <source
+          srcset="/fourth-back.png"
+          media="(min-width: 768px)"
+          class="fourth-block__back"
+          loading="lazy"
+        />
+        <source
+          srcset="/fourth-back-tablet.png"
+          media="(min-width: 576px)"
+          class="fourth-block__back"
+          loading="lazy"
+        />
+        <source
+          srcset="/fourth-back-mobile.png"
+          media="(min-width: 320px)"
+          class="fourth-block__back"
+          loading="lazy"
+        />
+        <img
+          src="/fourth-back.png"
+          class="fourth-block__back"
+          alt="fourth block background"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/fourth-front.png"
+          media="(min-width: 768px)"
+          class="fourth-block__front"
+          loading="lazy"
+        />
+        <source
+          srcset="/fourth-front-tablet.png"
+          media="(min-width: 576px)"
+          class="fourth-block__front"
+          loading="lazy"
+        />
+        <source
+          srcset="/fourth-front-mobile.png"
+          media="(min-width: 320px)"
+          class="fourth-block__front"
+          loading="lazy"
+        />
+        <img
+          src="/fourth-front.png"
+          class="fourth-block__front"
+          alt="fouth block background"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/fourth-circle.png"
+          media="(min-width: 768px)"
+          class="fourth-circle"
+          loading="lazy"
+        />
+        <source
+          srcset="/fourth-circle-mobile.png"
+          media="(min-width: 320px)"
+          class="fourth-circle"
+          loading="lazy"
+        />
+        <img
+          src="/fourth-circle.png"
+          class="fourth-circle"
+          alt="fourth circle"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
       <div class="text">
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
       </div>
     </section>
     <section class="fifth-block">
-      <img
-        class="fifth-block__back show-on-desktop"
-        src="/fifth-back.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fifth-block__back show-on-mobile"
-        src="/fifth-back-mobile.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fifth-block__front show-on-desktop"
-        src="/fifth-front.png"
-        alt=""
-        loading="lazy"
-      />
-      <img
-        class="fifth-block__front show-on-mobile"
-        src="/fifth-front-mobile.png"
-        alt=""
-        loading="lazy"
-      />
+      <picture>
+        <source
+          srcset="/fifth-back.png"
+          media="(min-width: 768px)"
+          class="fifth-block__back"
+          loading="lazy"
+        />
+        <source
+          srcset="/fifth-back-mobile.png"
+          media="(min-width: 320px)"
+          class="fifth-block__back"
+          loading="lazy"
+        />
+        <img
+          src="/fifth-back.png"
+          class="fifth-block__back"
+          alt="fifth block background"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/fifth-front.png"
+          media="(min-width: 768px)"
+          class="fifth-block__front"
+          loading="lazy"
+        />
+        <source
+          srcset="/fifth-front-mobile.png"
+          media="(min-width: 320px)"
+          class="fifth-block__front"
+          loading="lazy"
+        />
+        <img
+          src="/fifth-front.png"
+          class="fifth-block__front"
+          alt="fifth block background"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
       <div class="work-block left">
         <img
           src="/ural-main.png"
@@ -367,21 +425,27 @@
       <h2>А ещё мы делаем сайты-каталоги</h2>
       <h3>Пишите и мы всё обговорим</h3>
       <button>
-        <img src="/cta.png" alt="" />
+        <img src="/cta.png" alt="" loading="lazy" />
       </button>
       <div class="bottom-cat">
-        <img
-          class="show-on-desktop"
-          src="/botton-cat.png"
-          alt=""
-          loading="lazy"
-        />
-        <img
-          class="show-on-mobile"
-          src="/botton-cat-mobile.png"
-          alt=""
-          loading="lazy"
-        />
+        <picture>
+          <source
+            srcset="/botton-cat.png"
+            media="(min-width: 768px)"
+            loading="lazy"
+          />
+          <source
+            srcset="/botton-cat-mobile.png"
+            media="(min-width: 320px)"
+            loading="lazy"
+          />
+          <img
+            src="/botton-cat.png"
+            draggable="false"
+            loading="lazy"
+            alt="cat"
+          />
+        </picture>
       </div>
     </section>
   </div>
@@ -1251,21 +1315,6 @@ export default {
           width: auto;
         }
       }
-    }
-  }
-  .show-on-tablet {
-    @media (min-width: 576px) and (min-width: 1024px) {
-      display: none;
-    }
-  }
-  .show-on-desktop {
-    @media (max-width: 576px) {
-      display: none;
-    }
-  }
-  .show-on-mobile {
-    @media (min-width: 576px) {
-      display: none;
     }
   }
 }
