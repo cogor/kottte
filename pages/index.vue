@@ -99,13 +99,6 @@
           class="second-block__front"
           loading="lazy"
         />
-        <img
-          src="/second-front.png"
-          class="second-block__front"
-          alt="logo"
-          draggable="false"
-          loading="lazy"
-        />
       </picture>
       <div class="second-block_middle">
         <div class="second-block__circle">
