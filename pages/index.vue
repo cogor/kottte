@@ -39,18 +39,24 @@
       </div>
     </header>
     <section class="first-block">
-      <img
-        class="circle-one show-on-desktop"
-        src="/first-circle.png"
-        alt="First circle"
-        draggable="false"
-      />
-      <img
-        class="circle-one show-on-mobile"
-        src="/first-circle-mobile.png"
-        alt="First circle"
-        draggable="false"
-      />
+      <picture>
+        <source
+          srcset="/first-circle.png"
+          media="(min-width: 576px)"
+          class="circle-one"
+        />
+        <source
+          srcset="/first-circle-mobile.png"
+          media="(min-width: 320px)"
+          class="circle-one"
+        />
+        <img
+          src="/first-circle.png"
+          class="circle-one"
+          alt="logo"
+          draggable="false"
+        />
+      </picture>
       <div class="glass-panel">
         <div class="text">
           создаём простые сайты для решения непростых задач
@@ -62,18 +68,45 @@
       <div class="scroll-trigger">скрооооооолль</div>
     </section>
     <section class="second-block">
-      <img
-        src="/second-back@2x.png"
-        class="second-block__back show-on-desktop"
-        alt="second block back image"
-        loading="lazy"
-      />
-      <img
-        src="/second-back-mobile.png"
-        class="second-block__back show-on-mobile"
-        alt="second block back image"
-        loading="lazy"
-      />
+      <picture>
+        <source
+          srcset="/second-back@2x.png"
+          media="(min-width: 576px)"
+          class="second-block__back"
+        />
+        <source
+          srcset="/second-back-mobile.png"
+          media="(min-width: 320px)"
+          class="second-block__back"
+        />
+        <img
+          src="/second-back@2x.png"
+          class="second-block__back"
+          alt="logo"
+          draggable="false"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="/second-front.png"
+          media="(min-width: 576px)"
+          class="second-block__front"
+          loading="lazy"
+        />
+        <source
+          srcset="/second-front-mobile.png"
+          media="(min-width: 320px)"
+          class="second-block__front"
+          loading="lazy"
+        />
+        <img
+          src="/second-front.png"
+          class="second-block__front"
+          alt="logo"
+          draggable="false"
+          loading="lazy"
+        />
+      </picture>
       <div class="second-block_middle">
         <div class="second-block__circle">
           <img src="/second-circle.png" alt="Second circle" />
