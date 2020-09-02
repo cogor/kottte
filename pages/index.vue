@@ -356,7 +356,7 @@
             <div class="price-duration">
               <div class="duration-title">до 20 рабочих дней</div>
             </div>
-            <div class="price-amount">25 000 ₽</div>
+            <div class="price-amount">25 000 Руб.</div>
           </div>
         </div>
         <div class="price-block highlight">
@@ -385,7 +385,7 @@
                 всё внимание уделяем только вашему проекту
               </div>
             </div>
-            <div class="price-amount">40 000 ₽</div>
+            <div class="price-amount">40 000 Руб.</div>
           </div>
         </div>
         <div class="price-block">
@@ -415,7 +415,7 @@
                 всё внимание уделяем только вашему проекту
               </div>
             </div>
-            <div class="price-amount">80 000 ₽</div>
+            <div class="price-amount">80 000 Руб.</div>
           </div>
         </div>
       </div>
