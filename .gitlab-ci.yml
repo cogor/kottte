@@ -34,3 +34,11 @@ deploy:
   script:
     - aws s3 rm s3://$S3_BUCKET/_nuxt/ --recursive
     - aws s3 cp --recursive --include "*" ./dist s3://$S3_BUCKET/
+    - sh .ci-notify.sh ✅
+
+
+notify_error:
+  stage: notify
+  script:
+    - sh .ci-notify.sh ❌
+  when: on_failure #deploy fail
