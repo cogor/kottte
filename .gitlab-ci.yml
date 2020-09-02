@@ -1,3 +1,7 @@
+stages:
+  - build
+  - deploy
+  - notify
 cache:
   key: $CI_COMMIT_REF_SLUG
   paths:
@@ -37,7 +41,7 @@ deploy:
     - sh .ci-notify.sh ✅
 
 notify_error:
-  stage: .post
+  stage: post
   script:
     - sh .ci-notify.sh ❌
   when: on_failure #deploy fail
