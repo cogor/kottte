@@ -62,7 +62,12 @@
           создаём простые сайты для решения непростых задач
         </div>
         <div class="cta">
-          <img src="/cta.png" alt="cta-btn" loading="lazy" />
+          <img
+            src="/cta.png"
+            alt="cta-btn"
+            loading="lazy"
+            @click="isShowModal = true"
+          />
         </div>
       </div>
       <div class="scroll-trigger">скрооооооолль</div>
@@ -424,7 +429,7 @@
       </div>
       <h2>А ещё мы делаем сайты-каталоги</h2>
       <h3>Пишите и мы всё обговорим</h3>
-      <button>
+      <button @click="isShowModal = true">
         <img src="/cta.png" alt="" loading="lazy" />
       </button>
       <div class="bottom-cat">
@@ -448,11 +453,21 @@
         </picture>
       </div>
     </section>
+    <ModalContacts v-if="isShowModal" @close="isShowModal = false" />
   </div>
 </template>
 
 <script>
+import ModalContacts from '@/components/ModalContacts'
 export default {
+  components: {
+    ModalContacts,
+  },
+  data() {
+    return {
+      isShowModal: false,
+    }
+  },
   head() {
     return {
       title: 'Kottte',
@@ -1314,6 +1329,12 @@ export default {
           max-height: 300px;
           width: auto;
         }
+      }
+    }
+    button {
+      cursor: pointer;
+      img {
+        border-radius: 50%;
       }
     }
   }
