@@ -64,6 +64,12 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
     'nuxt-webfontloader',
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: 'GTM-NZJQLXN',
+      },
+    ],
   ],
   /*
    ** Axios module configuration
