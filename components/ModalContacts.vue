@@ -120,6 +120,14 @@ export default {
     padding-right: 164px;
     position: relative;
     animation: fade 0.4s ease-in;
+    @media (max-width: 576px) {
+      flex-direction: column;
+      max-width: calc(100% - 12px);
+      padding: 100px 0;
+      width: 100%;
+      margin-left: 6px;
+      margin-right: 6px;
+    }
   }
   .item {
     text-decoration: none;
@@ -127,6 +135,10 @@ export default {
       width: 120px;
       height: 120px;
       font-size: 0;
+      @media (max-width: 576px) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
   .close {
