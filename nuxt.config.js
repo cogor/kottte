@@ -64,17 +64,26 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
     'nuxt-webfontloader',
-    [
-      '@nuxtjs/google-gtag',
-      {
-        id: 'UA-59467377-4',
-      },
-    ],
+    ['@nuxtjs/google-gtag'],
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
+  gtm: {
+    id: 'GTM-NZJQLXN',
+    layer: 'dataLayer',
+    pageViewEventName: 'nuxtRoute',
+    autoInit: true,
+    respectDoNotTrack: true,
+    scriptDefer: false,
+    pageTracking: false,
+    scriptId: 'gtm-script',
+    scriptURL: 'https://www.googletagmanager.com/gtm.js',
+    noscript: true,
+    noscriptId: 'gtm-noscript',
+    noscriptURL: 'https://www.googletagmanager.com/ns.html',
+  },
   axios: {},
   /*
    ** Content module configuration
