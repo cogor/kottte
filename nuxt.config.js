@@ -55,7 +55,7 @@ export default {
         id: 'UA-59467377-4',
       },
     ],
-    '@nuxtjs/google-gtag',
+    '@nuxtjs/gtm',
   ],
   /*
    ** Nuxt.js modules
