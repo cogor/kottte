@@ -55,6 +55,7 @@ export default {
         id: 'UA-59467377-4',
       },
     ],
+    '@nuxtjs/google-gtag'
   ],
   /*
    ** Nuxt.js modules
@@ -64,7 +65,6 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
     'nuxt-webfontloader',
-    ['@nuxtjs/google-gtag'],
   ],
   /*
    ** Axios module configuration
