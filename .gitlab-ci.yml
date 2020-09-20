@@ -35,6 +35,7 @@ deploy:
   image: node:alpine
   before_script:
     - apk add openssh-client
+    - apk add curl
     - eval $(ssh-agent -s)
     - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
     - mkdir -p ~/.ssh
