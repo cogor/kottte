@@ -500,7 +500,7 @@ export default {
     }
   },
   mounted() {
-    const { second, third, fourth, fifth, cat } = this.$refs
+    const { second, third, fourth, fifth } = this.$refs
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: second,
