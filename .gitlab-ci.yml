@@ -40,9 +40,9 @@ deploy:
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
   script:
-    - ssh -o StrictHostKeyChecking=no root@45.12.18.76 "rm -r /var/www/kottte;cd /var/www/; mkdir kottte;"
+    - ssh -o StrictHostKeyChecking=no root@45.12.18.76 "rm -r /var/www/kottte;"
     - scp -o StrictHostKeyChecking=no dist.zip root@45.12.18.76:/var/www/kottte
-    - ssh -o StrictHostKeyChecking=no root@45.12.18.76 "rm -rf /var/www/kottte/; cd /var/www/kottte; unzip dist.zip; rm dist.zip;"
+    - ssh -o StrictHostKeyChecking=no root@45.12.18.76 "cd /var/www/; mkdir kottte; cd /var/www/kottte; unzip dist.zip; rm dist.zip;"
     - sh .ci-notify.sh ✅
 
 notify_error:
