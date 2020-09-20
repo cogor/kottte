@@ -500,62 +500,60 @@ export default {
     }
   },
   mounted() {
-    if (process.client) {
-      const { second, third, fourth, fifth } = this.$refs
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: second,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      })
-      const tl2 = gsap.timeline({
-        scrollTrigger: {
-          trigger: third,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      })
-      const tl3 = gsap.timeline({
-        scrollTrigger: {
-          trigger: fourth,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      })
-      const tl4 = gsap.timeline({
-        scrollTrigger: {
-          trigger: fifth,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      })
+    const { second, third, fourth, fifth } = this.$refs
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: second,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: third,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+    const tl3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: fourth,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+    const tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: fifth,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
 
-      gsap.utils.toArray('.parallax').forEach((layer) => {
-        const depth = layer.dataset.depth
-        const movement = -(layer.offsetHeight * depth)
-        tl.to(layer, { y: movement, ease: 'none' }, 0)
-      })
-      gsap.utils.toArray('.parallax2').forEach((layer) => {
-        const depth = layer.dataset.depth
-        const movement = -(layer.offsetHeight * depth)
-        tl2.to(layer, { y: movement, ease: 'none' }, 0)
-      })
-      gsap.utils.toArray('.parallax3').forEach((layer) => {
-        const depth = layer.dataset.depth
-        const movement = -(layer.offsetHeight * depth)
-        tl3.to(layer, { y: movement, ease: 'none' }, 0)
-      })
-      gsap.utils.toArray('.parallax4').forEach((layer) => {
-        const depth = layer.dataset.depth
-        const movement = -(layer.offsetHeight * depth)
-        tl4.to(layer, { y: movement, ease: 'none' }, 0)
-      })
-    }
+    gsap.utils.toArray('.parallax').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl.to(layer, { y: movement, ease: 'none' }, 0)
+    })
+    gsap.utils.toArray('.parallax2').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl2.to(layer, { y: movement, ease: 'none' }, 0)
+    })
+    gsap.utils.toArray('.parallax3').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl3.to(layer, { y: movement, ease: 'none' }, 0)
+    })
+    gsap.utils.toArray('.parallax4').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl4.to(layer, { y: movement, ease: 'none' }, 0)
+    })
   },
   head() {
     return {
