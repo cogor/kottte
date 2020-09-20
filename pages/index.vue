@@ -118,7 +118,7 @@
           data-depth="0.3"
         />
       </picture>
-      <div class="second-block_middle parallax" data-depth="0.1">
+      <div class="second-block_middle parallax">
         <div class="second-block__circle">
           <img src="/second-circle.png" alt="Second circle" loading="lazy" />
           <div class="time">
@@ -500,10 +500,10 @@ export default {
     }
   },
   mounted() {
-    const { second, third, fourth, fifth } = this.$refs
+    // const { second, third, fourth, fifth } = this.$refs
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: second,
+        trigger: '#second',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -511,7 +511,7 @@ export default {
     })
     const tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: third,
+        trigger: '#third',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -519,7 +519,7 @@ export default {
     })
     const tl3 = gsap.timeline({
       scrollTrigger: {
-        trigger: fourth,
+        trigger: '#fourth',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -527,7 +527,7 @@ export default {
     })
     const tl4 = gsap.timeline({
       scrollTrigger: {
-        trigger: fifth,
+        trigger: '#fifth',
         start: 'top top',
         end: 'bottom top',
         scrub: true,
