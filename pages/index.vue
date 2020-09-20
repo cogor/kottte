@@ -72,7 +72,7 @@
       </div>
       <div class="scroll-trigger">скрооооооолль</div>
     </section>
-    <section ref="second" class="second-block">
+    <section id="second" class="second-block">
       <picture>
         <source
           srcset="/second-back@2x.png"
@@ -134,7 +134,7 @@
         </div>
       </div>
     </section>
-    <section ref="third" class="third-block">
+    <section id="third" class="third-block">
       <picture>
         <source
           srcset="/third-back.png"
@@ -217,7 +217,7 @@
         </div>
       </div>
     </section>
-    <section ref="fourth" class="fourth-block">
+    <section id="fourth" class="fourth-block">
       <picture>
         <source
           srcset="/fourth-back.png"
@@ -305,7 +305,7 @@
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
       </div>
     </section>
-    <section ref="fifth" class="fifth-block">
+    <section id="fifth" class="fifth-block">
       <picture>
         <source
           srcset="/fifth-back.png"
@@ -368,7 +368,7 @@
         <img src="/med.png" alt="Medovkrym project" loading="lazy" />
       </div>
     </section>
-    <section ref="cat" class="sixth-block">
+    <section class="sixth-block">
       <h2>Сколько стоит?</h2>
       <div class="type">
         Сайт визитка <span>/</span> Лендинг <span>/</span> Портфолио
