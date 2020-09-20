@@ -72,47 +72,53 @@
       </div>
       <div class="scroll-trigger">скрооооооолль</div>
     </section>
-    <section class="second-block">
+    <section ref="second" class="second-block">
       <picture>
         <source
           srcset="/second-back@2x.png"
           media="(min-width: 576px)"
-          class="second-block__back"
+          class="second-block__back parallax"
+          data-depth="0.4"
         />
         <source
           srcset="/second-back-mobile.png"
           media="(min-width: 320px)"
-          class="second-block__back"
+          class="second-block__back parallax"
+          data-depth="0.4"
         />
         <img
           src="/second-back@2x.png"
-          class="second-block__back"
+          class="second-block__back parallax"
           alt="second block background"
           draggable="false"
+          data-depth="0.4"
         />
       </picture>
       <picture>
         <source
           srcset="/second-front.png"
           media="(min-width: 576px)"
-          class="second-block__front"
+          class="second-block__front parallax"
           loading="lazy"
+          data-depth="0.3"
         />
         <source
           srcset="/second-front-mobile.png"
           media="(min-width: 320px)"
-          class="second-block__front"
+          class="second-block__front parallax"
           loading="lazy"
+          data-depth="0.3"
         />
         <img
           src="/second-front.png"
-          class="second-block__front"
+          class="second-block__front parallax"
           alt="second block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.3"
         />
       </picture>
-      <div class="second-block_middle">
+      <div class="second-block_middle parallax" data-depth="0.1">
         <div class="second-block__circle">
           <img src="/second-circle.png" alt="Second circle" loading="lazy" />
           <div class="time">
@@ -128,59 +134,67 @@
         </div>
       </div>
     </section>
-    <section class="third-block">
+    <section ref="third" class="third-block">
       <picture>
         <source
           srcset="/third-back.png"
           media="(min-width: 768px)"
-          class="third-block__back"
+          class="third-block__back parallax2"
           loading="lazy"
+          data-depth="0.4"
         />
         <source
           srcset="/third-back-tablet.png"
           media="(min-width: 576px)"
-          class="third-block__back"
+          class="third-block__back parallax2"
           loading="lazy"
+          data-depth="0.4"
         />
         <source
           srcset="/third-back-mobile.png"
           media="(min-width: 320px)"
-          class="third-block__back"
+          class="third-block__back parallax2"
           loading="lazy"
+          data-depth="0.4"
         />
         <img
           src="/third-back.png"
-          class="third-block__back"
+          class="third-block__back parallax2"
           alt="third block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.4"
         />
       </picture>
       <picture>
         <source
           srcset="/third-front.png"
           media="(min-width: 768px)"
-          class="third-block__front"
+          class="third-block__front parallax2"
           loading="lazy"
+          data-depth="0.1"
         />
         <source
           srcset="/third-front-tablet.png"
           media="(min-width: 576px)"
-          class="third-block__front"
+          class="third-block__front parallax2"
           loading="lazy"
+          data-depth="0.1"
         />
         <source
           srcset="/third-front-mobile.png"
           media="(min-width: 320px)"
-          class="third-block__front"
+          class="third-block__front parallax2"
           loading="lazy"
+          data-depth="0.1"
         />
         <img
           src="/third-front.png"
-          class="third-block__front"
+          class="third-block__front parallax2"
           alt="third block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.1"
         />
       </picture>
       <h2>Но почему это важно?</h2>
@@ -203,59 +217,67 @@
         </div>
       </div>
     </section>
-    <section class="fourth-block">
+    <section ref="fourth" class="fourth-block">
       <picture>
         <source
           srcset="/fourth-back.png"
           media="(min-width: 768px)"
-          class="fourth-block__back"
+          class="fourth-block__back parallax3"
           loading="lazy"
+          data-depth="0.4"
         />
         <source
           srcset="/fourth-back-tablet.png"
           media="(min-width: 576px)"
-          class="fourth-block__back"
+          class="fourth-block__back parallax3"
           loading="lazy"
+          data-depth="0.4"
         />
         <source
           srcset="/fourth-back-mobile.png"
           media="(min-width: 320px)"
-          class="fourth-block__back"
+          class="fourth-block__back parallax3"
           loading="lazy"
+          data-depth="0.4"
         />
         <img
           src="/fourth-back.png"
-          class="fourth-block__back"
+          class="fourth-block__back parallax3"
           alt="fourth block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.4"
         />
       </picture>
       <picture>
         <source
           srcset="/fourth-front.png"
           media="(min-width: 768px)"
-          class="fourth-block__front"
+          class="fourth-block__front parallax3"
           loading="lazy"
+          data-depth="0.35"
         />
         <source
           srcset="/fourth-front-tablet.png"
           media="(min-width: 576px)"
-          class="fourth-block__front"
+          class="fourth-block__front parallax3"
           loading="lazy"
+          data-depth="0.35"
         />
         <source
           srcset="/fourth-front-mobile.png"
           media="(min-width: 320px)"
-          class="fourth-block__front"
+          class="fourth-block__front parallax3"
           loading="lazy"
+          data-depth="0.35"
         />
         <img
           src="/fourth-front.png"
-          class="fourth-block__front"
+          class="fourth-block__front parallax3"
           alt="fouth block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.35"
         />
       </picture>
       <picture>
@@ -283,47 +305,53 @@
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
       </div>
     </section>
-    <section class="fifth-block">
+    <section ref="fifth" class="fifth-block">
       <picture>
         <source
           srcset="/fifth-back.png"
           media="(min-width: 768px)"
-          class="fifth-block__back"
+          class="fifth-block__back parallax4"
           loading="lazy"
+          data-depth="0.3"
         />
         <source
           srcset="/fifth-back-mobile.png"
           media="(min-width: 320px)"
-          class="fifth-block__back"
+          class="fifth-block__back parallax4"
           loading="lazy"
+          data-depth="0.3"
         />
         <img
           src="/fifth-back.png"
-          class="fifth-block__back"
+          class="fifth-block__back parallax4"
           alt="fifth block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.3"
         />
       </picture>
       <picture>
         <source
           srcset="/fifth-front.png"
           media="(min-width: 768px)"
-          class="fifth-block__front"
+          class="fifth-block__front parallax4"
           loading="lazy"
+          data-depth="0.3"
         />
         <source
           srcset="/fifth-front-mobile.png"
           media="(min-width: 320px)"
-          class="fifth-block__front"
+          class="fifth-block__front parallax4"
           loading="lazy"
+          data-depth="0.3"
         />
         <img
           src="/fifth-front.png"
-          class="fifth-block__front"
+          class="fifth-block__front parallax4"
           alt="fifth block background"
           draggable="false"
           loading="lazy"
+          data-depth="0.3"
         />
       </picture>
       <div class="work-block left">
@@ -340,7 +368,7 @@
         <img src="/med.png" alt="Medovkrym project" loading="lazy" />
       </div>
     </section>
-    <section class="sixth-block">
+    <section ref="cat" class="sixth-block">
       <h2>Сколько стоит?</h2>
       <div class="type">
         Сайт визитка <span>/</span> Лендинг <span>/</span> Портфолио
@@ -432,7 +460,7 @@
       <button @click="isShowModal = true">
         <img src="/cta.png" alt="" loading="lazy" />
       </button>
-      <div class="bottom-cat">
+      <div class="bottom-cat parallax5" data-depth="1">
         <picture>
           <source
             srcset="/botton-cat.png"
@@ -459,6 +487,9 @@
 
 <script>
 import ModalContacts from '@/components/ModalContacts'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 export default {
   components: {
     ModalContacts,
@@ -467,6 +498,62 @@ export default {
     return {
       isShowModal: false,
     }
+  },
+  mounted() {
+    const { second, third, fourth, fifth, cat } = this.$refs
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: second,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: third,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+    const tl3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: fourth,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+    const tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: fifth,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    })
+
+    gsap.utils.toArray('.parallax').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl.to(layer, { y: movement, ease: 'none' }, 0)
+    })
+    gsap.utils.toArray('.parallax2').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl2.to(layer, { y: movement, ease: 'none' }, 0)
+    })
+    gsap.utils.toArray('.parallax3').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl3.to(layer, { y: movement, ease: 'none' }, 0)
+    })
+    gsap.utils.toArray('.parallax4').forEach((layer) => {
+      const depth = layer.dataset.depth
+      const movement = -(layer.offsetHeight * depth)
+      tl4.to(layer, { y: movement, ease: 'none' }, 0)
+    })
   },
   head() {
     return {
