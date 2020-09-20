@@ -111,6 +111,7 @@ export default {
         // Change the postcss-preset-env settings
       },
     },
+    transpile: ['gsap'],
   },
   webfontloader: {
     google: {
