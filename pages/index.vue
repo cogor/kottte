@@ -72,7 +72,7 @@
       </div>
       <div class="scroll-trigger">скрооооооолль</div>
     </section>
-    <section id="second" class="second-block">
+    <section ref="second" class="second-block">
       <picture>
         <source
           srcset="/second-back@2x.png"
@@ -134,7 +134,7 @@
         </div>
       </div>
     </section>
-    <section id="third" class="third-block">
+    <section ref="third" class="third-block">
       <picture>
         <source
           srcset="/third-back.png"
@@ -217,7 +217,7 @@
         </div>
       </div>
     </section>
-    <section id="fourth" class="fourth-block">
+    <section ref="fourth" class="fourth-block">
       <picture>
         <source
           srcset="/fourth-back.png"
@@ -305,7 +305,7 @@
         Наши смелые идеи ярко выделяют вас среди конкурентов на рынке
       </div>
     </section>
-    <section id="fifth" class="fifth-block">
+    <section ref="fifth" class="fifth-block">
       <picture>
         <source
           srcset="/fifth-back.png"
@@ -487,8 +487,9 @@
 
 <script>
 import ModalContacts from '@/components/ModalContacts'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
+const { gsap } = require('gsap/dist/gsap')
+const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
+
 gsap.registerPlugin(ScrollTrigger)
 export default {
   components: {
@@ -500,10 +501,10 @@ export default {
     }
   },
   mounted() {
-    // const { second, third, fourth, fifth } = this.$refs
+    const { second, third, fourth, fifth } = this.$refs
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '#second',
+        trigger: second,
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -511,7 +512,7 @@ export default {
     })
     const tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: '#third',
+        trigger: third,
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -519,7 +520,7 @@ export default {
     })
     const tl3 = gsap.timeline({
       scrollTrigger: {
-        trigger: '#fourth',
+        trigger: fourth,
         start: 'top top',
         end: 'bottom top',
         scrub: true,
@@ -527,7 +528,7 @@ export default {
     })
     const tl4 = gsap.timeline({
       scrollTrigger: {
-        trigger: '#fifth',
+        trigger: fifth,
         start: 'top top',
         end: 'bottom top',
         scrub: true,
