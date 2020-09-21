@@ -110,7 +110,7 @@ export default {
       preset: {
         // Change the postcss-preset-env settings
       },
-    }
+    },
   },
   webfontloader: {
     google: {
