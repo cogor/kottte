@@ -490,7 +490,6 @@ import ModalContacts from '@/components/ModalContacts'
 const { gsap } = require('gsap/dist/gsap')
 const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
 
-gsap.registerPlugin(ScrollTrigger)
 export default {
   components: {
     ModalContacts,
@@ -501,6 +500,7 @@ export default {
     }
   },
   mounted() {
+    gsap.registerPlugin(ScrollTrigger)
     const { second, third, fourth, fifth } = this.$refs
     const tl = gsap.timeline({
       scrollTrigger: {
