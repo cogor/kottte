@@ -487,8 +487,8 @@
 
 <script>
 import ModalContacts from '@/components/ModalContacts'
-const { gsap } = require('gsap/dist/gsap')
-const { ScrollTrigger } = require('gsap/dist/ScrollTrigger')
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export default {
   components: {
