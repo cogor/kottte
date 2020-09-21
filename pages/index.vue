@@ -255,21 +255,21 @@
           media="(min-width: 768px)"
           class="fourth-block__front parallax3"
           loading="lazy"
-          data-depth="0.35"
+          data-depth="0.30"
         />
         <source
           srcset="/fourth-front-tablet.png"
           media="(min-width: 576px)"
           class="fourth-block__front parallax3"
           loading="lazy"
-          data-depth="0.35"
+          data-depth="0.30"
         />
         <source
           srcset="/fourth-front-mobile.png"
           media="(min-width: 320px)"
           class="fourth-block__front parallax3"
           loading="lazy"
-          data-depth="0.35"
+          data-depth="0.30"
         />
         <img
           src="/fourth-front.png"
@@ -277,7 +277,7 @@
           alt="fouth block background"
           draggable="false"
           loading="lazy"
-          data-depth="0.35"
+          data-depth="0.30"
         />
       </picture>
       <picture>
