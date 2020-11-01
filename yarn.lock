@@ -1230,14 +1230,14 @@
     consola "^2.11.3"
     eslint-loader "^4.0.2"
 
-"@nuxtjs/google-analytics@^2.4.0":
+"@nuxtjs/google-analytics@2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/google-analytics/-/google-analytics-2.4.0.tgz#3bb9f398a05cc23340d1f423f8d8653dc4114f46"
   integrity sha512-rDQTwHIjyjVrx8GywHPuWykJ3jRFGaHl5Iqji/y8tQWUc0yGEeHxOoR0yimzxnTS1Ph2/PubQYpgnVeEPEdL/A==
   dependencies:
     vue-analytics "^5.22.1"
 
-"@nuxtjs/gtm@^2.3.2":
+"@nuxtjs/gtm@2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@nuxtjs/gtm/-/gtm-2.3.2.tgz#7b1b9a37f8250c475007cfde1294b7b8bc43d025"
   integrity sha512-DC4m8mqKv8WkmFZJ/qEnpDXhJgbMQfTyny1p2GGbV+QzEtm61tAsNIjx9tO15KYH99EG3LqJN68RxsEMtn2ZVQ==
@@ -4305,7 +4305,7 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
 
-gsap@^3.5.1:
+gsap@3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.5.1.tgz#36cf76787d1758e749469d5e9cbe365c186544c4"
   integrity sha512-EMV0RSUKZNeTUzLKAizGlwxVOUyif3/g8I3S1aA/hf3gbqwBvmQ02x1RdTBQNQMOpHCVBv9y/vaHwfctoAg8zw==
@@ -6309,7 +6309,7 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-postcss-100vh-fix@^0.1.1:
+postcss-100vh-fix@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/postcss-100vh-fix/-/postcss-100vh-fix-0.1.1.tgz#b3a5f816b5a7ba05b8073c3b0e7b44a48e0654df"
   integrity sha512-Dv0OdLLIskpAgB70XxFTwHHs0mQnDbnXF12NI2DjIt7pq5wvwDr9p3jAoP7P7OBo7Uu2v6mQzj33tU7o0lI+NA==
