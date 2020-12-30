@@ -24,7 +24,7 @@
     "postcss-loader": "3.0.0",
     "postcss-nested": "4.2.3",
     "postcss-preset-env": "6.7.0",
-    "postcss-sorting": "5.0.1"
+    "postcss-sorting": "6.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "3.1.0",
